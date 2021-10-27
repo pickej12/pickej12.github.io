@@ -17,9 +17,24 @@
 #main_visual .item02 {background:url(../lib/base/main_visual02.jpg) no-repeat center center/cover;}
 #main_visual .item03 {background:url(../lib/base/main_visual03.jpg) no-repeat center center/cover;}
 
-#main_visual .container {position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:1200px;color:#fff;text-align:center;}
-#main_visual h2 {font-size:18px;font-weight:100;letter-spacing:1em;margin-bottom: 15px;}
-#main_visual p {font-size: 12px;margin-bottom:40px;}
+#main_visual .container {position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:1200px;padding:0 15px;color:#fff;text-align:center;}
+#main_visual h2 {font-size:18px;font-weight:100;letter-spacing:1em;margin-bottom:15px;}
+#main_visual p {font-size:12px;margin-bottom:40px;line-height:1.6;}
+
+#main_visual span {display:block;width:100px;height:200px;border-top:5px solid rgba(255,255,255,0.2);border-left:5px solid rgba(255,255,255,0.2);position:absolute;top:50%;left:50%;}
+#main_visual span.left {transform:translate(-50%,-50%) rotate(-45deg);margin-left:-700px;}
+#main_visual span.right {transform:translate(-50%,-50%) rotate(135deg);margin-left:700px;}
+#main_visual .list {display:flex;width:1200px;height:40px;line-height:40px;position:absolute;bottom:0;left:50%;transform:translateX(-50%);color:#fff;background:orange;}
+#main_visual .list li {flex:1;text-align:center;position:relative;}
+#main_visual .list li~li {border-left:1px solid #fff;}
+#main_visual .list li:before {content:"";position:absolute;top:0;left:0;width:0;height:100%;background:#f00;Z-index:-1;}
+#main_visual .list li.on:before {width:100%;transition:3s;}
+
+#main_visual .photo {position:absolute;top:50px;right:300px;width:200px;height:200px;border-radius:50%;overflow:hidden;transition:3s;}
+#main_visual .photo img {width:100%;}
+
+
+
 
 #content01 {position:relative;padding:150px 0;text-align:center;}
 #content01 h2 {font-size:18px;font-weight:100;letter-spacing:1em;margin-bottom: 15px;}
@@ -34,8 +49,8 @@
 #content01 .slick-dots li button {display:none;}
 
 #content01 .btn i {position:absolute;top:52%;left:50%;transform:translate(-50%,-5%);font-size:20px;padding:10px;background:#ddd;border-radius:50%;}
-#content01 .btn i.xi-arrow-left {margin-left:-585px;}
-#content01 .btn i.xi-arrow-right {margin-left:585px;}
+#content01 .btn i.xi-arrow-left {margin-left:-650px;}
+#content01 .btn i.xi-arrow-right {margin-left:650px;}
 
 
 #footer {padding:80px 0 100px 0; background: #333;color: #fff;}
