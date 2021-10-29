@@ -30,7 +30,7 @@ $('#bottom_banner i').on('click',function(){
 });
 
 $('#toTop').on ('click',function(){
-    $('html, body').animate({scrollTop:0},600)
+    $('html, body').animate({scrollTop:0},600) //600-> 속도
 });
 
 $(window).on('scroll',function(){
