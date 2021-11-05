@@ -100,7 +100,7 @@
 
 /*con04*/
 #con04 {padding:180px 0;background:url(../img/con04_visual05.jpg) no-repeat center center/cover;text-align:center;color:#fff;letter-spacing:-0.025em;}
-#con04 h2 {font-size:18px;font-weight:200;margin-bottom:10px;}
+#con04 h2 {font-size:16px;font-weight:200;margin-bottom:10px;}
 #con04 p {font-size:20px;font-weight:500;line-height:24px;}
 #con04 .btn {display:flex;justify-content:center;margin:28px auto 0;}
 #con04 a {display:block;font-weight:500;border:1px solid #ccc;width:160px;line-height:40px;text-align:center;margin:0 15px;}
