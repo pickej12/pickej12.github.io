@@ -41,11 +41,11 @@ $(function(){
 
 
 
-    $(window).on('scroll',function(){
-        var sct=$(window).scrollTop();
+    // $(window).on('scroll',function(){
+    //     var sct=$(window).scrollTop();
           
-        $('#right_pop').css({top:120+sct});
-    });
+    //     $('#right_pop').css({top:120+sct});
+    // });
 
 
 
