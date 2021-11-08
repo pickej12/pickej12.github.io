@@ -72,5 +72,20 @@ $('#link select').on('change', function(){
 });
 
 
+$('.tab_menu li').on('click',function(){
+    var idx=$(this).index();
+    // $('.tab_con>div').eq(idx).show().siblings().hide();
+    $('.tab_con>div').eq(idx).addClass('on').siblings().removeClass('on');
+});
+
+
+$('.tab_slider').slick({
+    arrows:false,
+    autoplay:true,
+    slidesToShow:4,
+    centerMode:true,
+});
+
+
 //-----------------------------------------------    
 });
