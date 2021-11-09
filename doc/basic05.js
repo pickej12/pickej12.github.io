@@ -22,7 +22,7 @@ $('.main_slider').slick({
 
 $('.pr_slider').slick({
     arrows:false,
-    slidesToShow:5,
+    slidesToShow:3,
     autoplay:true,
     autoplaySpeed:2000,
     // centerMode:true,
