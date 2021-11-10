@@ -31,10 +31,10 @@ $('.pr_slider').slick({
     pauseOnFocus:false,
 });
 
-$('.pr_slider figure').eq(7).addClass('on');
+$('.pr_slider figure').eq(4).addClass('on');
 $('.pr_slider').on('afterChange',function(e,s,c){
     // c=1,2....
-    $('.pr_slider figure').eq(c+7).addClass('on').siblings().removeClass('on');
+    $('.pr_slider figure').eq(c+4).addClass('on').siblings().removeClass('on');
     $('#product03 .slide_bar>span').css({left:c*100})
 });
 
