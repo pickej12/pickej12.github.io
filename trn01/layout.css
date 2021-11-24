@@ -44,3 +44,41 @@ orange #efac4e
 
 .visual .slick-dots li:after {content:"";display:block;width:0;height:100%;background:#f00;}
 .visual .slick-dots li.slick-active:after {width:100%;transition:3s;}
+
+
+
+
+.content {padding:5rem 0;text-align:center;}
+.content h2 {font-size:0.7rem;margin-bottom:0.25em;}
+.content p {font-size:2rem;font-family:'Kaushan Script', 'Noto Sans KR';color:#87674e;margin-bottom:1.5rem;}
+.content .contianer {display:flex;flex-flow:row wrap;width:60rem;margin:0 auto;}
+
+.content figure {width:50%;padding:0 0.75rem;position:relative;}
+.content figure img {max-width:100%;transition:0.4s;}
+.content figure .case {display:block;margin-bottom:0.5rem;overflow:hidden;}
+.content figure h3 {font-size:0.7rem;margin-bottom:0.5rem;}
+.content figure strong {display:block;font-size:1.25rem;font-weight:500;margin-bottom:1rem;}
+.content figure .case:before {content:attr(data-prnum);display:block;width:9rem;background:#5bbfdd;color:#fff;padding:0.5rem 1rem;position:absolute;top:0.75rem;left:0;z-index:998;transition:0.5s 0.4s;}
+
+.content figure .case:hover img {transform:scale(1.2);}
+.content figure .case:hover:before {width:13rem;}
+
+
+
+
+.customer {padding:5rem 0 30rem 0;background:url(./img/bg_main2.jpg) no-repeat center bottom/cover;text-align:center;color:#f2f2f2;}
+.customer h2 {font-size:1.4rem;font-weight:400;margin-bottom:2rem;line-height:1.4;}
+.customer .container {display:flex;width:60rem;margin:0 auto;}
+.customer .container li {flex:1;padding:0 0.75rem;}
+
+.customer .container li a {display:block;background:rgba(0,0,0,0.4);padding:4rem 0.75rem;border-radius:1rem;}
+
+.customer h3 {font-size:1.3rem;font-weight:500;margin-bottom:1rem;line-height:1.4;}
+.customer p {font-size:0.7rem;font-weight:300;line-height:1.4;}
+
+
+
+
+.footer {padding:3rem 0;text-align:center;font-size:0.65rem;font-weight:300;color:#444;}
+.footer ul {display:flex;justify-content:center;margin-bottom:0.5rem;}
+.footer ul li~li:before {content:"";display:inline-block;width:1px;height:0.5rem;background:#ddd;margin:0 0.75rem;}
