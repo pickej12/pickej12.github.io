@@ -230,3 +230,14 @@ nav>ul>li~li>a:after {content:"";display:block;width:1px;height:12px;background:
     section h2 {padding:0 15px;}
     section p {padding:0 15px;line-height:1.4;}
 }
+
+
+#footer {background:#333;color:#f4f4f4;line-height:100px;}
+#footer .f_top {border-bottom:1px solid #555;}
+#footer .f_top ul {display:flex;}
+#footer .f_top ul a {padding:0 20px;position:relative;}
+#footer .f_top ul>li~li a:after {content:"";display:block;width:1px;height:12px;background:#999;position:absolute;top:50%;left:0;transform:translateY(-50%)}
+#footer .f_top ul>li:first-child a {padding:0 20px 0 0;}
+#footer .container {justify-content:space-between;}
+#footer i {font-size:30px;}
+#footer .link select{background:#333;padding:3px;outline:none;margin:30px;}

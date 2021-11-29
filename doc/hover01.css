@@ -79,18 +79,18 @@ ex) 윗부분 예시 .hover07 span:nth-child(2)/ .hover07 span:nth-of-type(1)*/
 
 
 
-.hover07 {background:#333;}
-.hover07 p {position:absolute;top:10px;left:10px;width:380px;height:380px;background:url(../lib/base/main_item01.jpg--);z-index:999;}
+.hover10 {background:#333;}
+.hover10 p {position:absolute;top:10px;left:10px;width:380px;height:380px;background:url(../lib/base/main_item01.jpg--);z-index:999;}
 
-.hover07 span {position:absolute;}
-.hover07 span:nth-of-type(1) {top:0;left:0;width:0;height:10px;background:linear-gradient(to left,#f00 ,#ff0);transition:0.5s 1.5s;}  
+.hover10 span {position:absolute;}
+.hover10 span:nth-of-type(1) {top:0;left:0;width:0;height:10px;background:linear-gradient(to left,#f00 ,#ff0);transition:0.5s 1s;}  
 /*nth-child는 태그 상관없이 위치해있는 순번으로! nth-of-type은 같은 태그끼리 순번으로 !
 ex) 윗부분 예시 .hover07 span:nth-child(2)/ .hover07 span:nth-of-type(1)*/
-.hover07 span:nth-of-type(2) {top:0;right:0;width:10px;height:0;background:linear-gradient(to top,#f00 ,#ff0);transition:0.5s 1s;}  
-.hover07 span:nth-of-type(3) {bottom:0;right:0;width:0;height:10px;background:linear-gradient(to left,#f00 ,#ff0);;transition:0.5s 0.5s;}  
-.hover07 span:nth-of-type(4) {bottom:0;left:0;width:10px;height:0;background:linear-gradient(to top,#f00 ,#ff0);;transition:0.5s} 
+.hover10 span:nth-of-type(2) {top:0;right:0;width:10px;height:0;background:linear-gradient(to top,#f00 ,#ff0);transition:0.5s 1.5s;}  
+.hover10 span:nth-of-type(3) {bottom:0;right:0;width:0;height:10px;background:linear-gradient(to left,#f00 ,#ff0);;transition:0.5s;}  
+.hover10 span:nth-of-type(4) {bottom:0;left:0;width:10px;height:0;background:linear-gradient(to top,#f00 ,#ff0);;transition:0.5s 0.5s;} 
 
-.hover07:hover span:nth-of-type(1) {top:0;left:0;width:400px;height:10px;background:#ff0;transition:0.5s;}  
-.hover07:hover span:nth-of-type(2) {top:0;right:0;width:10px;height:400px;background:#ff0;transition:0.5s 0.5s;}  
-.hover07:hover span:nth-of-type(3) {bottom:0;right:0;width:400px;height:10px;background:#ff0;transition:0.5s 1s;}  
-.hover07:hover span:nth-of-type(4) {bottom:0;left:0;width:10px;height:400px;background:#ff0;transition:0.5s 1.5s;}
+.hover10:hover span:nth-of-type(1) {top:0;left:0;width:400px;height:10px;background:#ff0;transition:0.5s 1s;}  
+.hover10:hover span:nth-of-type(2) {top:0;right:0;width:10px;height:400px;background:#ff0;transition:0.5s 1.5s;}  
+.hover10:hover span:nth-of-type(3) {bottom:0;right:0;width:400px;height:10px;background:#ff0;transition:0.5s}  
+.hover10:hover span:nth-of-type(4) {bottom:0;left:0;width:10px;height:400px;background:#ff0;transition:0.5s 0.5s;}

@@ -61,6 +61,7 @@ body {font-size:1.6rem;}
     .gnb>ul>li {position:relative;}
     .gnb>ul>li~li {border-top:1px solid #ddd;}
     .gnb>ul>li>a {display:block;padding:0 3rem;}
+    
     .gnb>ul>li .depth02 {display:none;position:static;top:10rem;left:0;width:100%;text-align:left;line-height:3rem;z-index:999;background:#f4f4f4;padding:1rem 0;}
     .gnb:hover>ul>li .depth02 {display:none;}
     .gnb ul ul a {display:block;padding:0 3rem;}
