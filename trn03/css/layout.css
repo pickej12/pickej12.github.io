@@ -200,13 +200,13 @@ body {font-size:1.6rem;}
 .sc06 {background:url(../img/main_bg03.jpg) no-repeat center center/cover;color:#fff;}
 
 .sc06 .container {display:flex;align-items:center;}
-.sc06 .container .left {flex:2.3;border-right:1px solid rgba(255,255,255,0.5);padding:5rem 0;transform:translateX(-20rem);opacity:0;transition:0.5s;}
-.sc06 .container .center {flex:4;transform:translateY(10rem);opacity:0;transition:0.5s;}
-.sc06 .container .right {flex:6;transform:translateX(20rem);opacity:0;transition:0.5s;}
+.sc06 .container .left {flex:2.3;border-right:1px solid rgba(255,255,255,0.5);padding:5rem 0;transform:translateX(-20rem);opacity:0;transition:0.2s;}
+.sc06 .container .center {flex:4;transform:translateY(10rem);opacity:0;transition:0.2s;}
+.sc06 .container .right {flex:6;transform:translateX(20rem);opacity:0;transition:0.3s;}
 
-.sc06.on .container .left {transform:translateX(0);opacity:1;transition:0.5s;}
-.sc06.on .container .center {transform:translateY(0);opacity:1;transition:0.5s 0.5s;}
-.sc06.on .container .right {transform:translateX(0);opacity:1;transition:0.5s 1s;}
+.sc06.on .container .left {transform:translateX(0);opacity:1;transition:0.3s;}
+.sc06.on .container .center {transform:translateY(0);opacity:1;transition:0.3s 0.3s;}
+.sc06.on .container .right {transform:translateX(0);opacity:1;transition:0.3s 0.5s;}
 
 .sc06 .container .left strong {display:block;width:8rem;background:#222;padding:0.5rem 0 0.7rem 0;text-align:center;margin-bottom:2rem;font-size:1.4rem;}
 .sc06 .container .left h3 {font-size:2.5rem;font-weight:300;margin-bottom:4rem;line-height:1.4;}
