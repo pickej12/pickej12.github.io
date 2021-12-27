@@ -95,7 +95,7 @@
 .con01 .item02 {grid-row-start:2;grid-row-end: 3;background:#97123d;color:#fff;padding-top:50px;box-shadow:5px 5px 10px -6px #ccc;}
 .con01 .item02 strong {display:block;font-size:22px;margin-bottom:15px;}
 .con01 .item02 span {line-height:22px;font-size:15px;font-weight:300;margin-bottom:28px;color:#ddd;}
-.con01 .item02 select {color:#333;margin-top:25px;width:255px;border:none;background:#fff;text-align:center;font-weight:700;font-size:15px;padding:7px 5px 7px 0;border-radius:5px;}
+.con01 .item02 select {color:#333;margin-top:25px;width:255px;border:none;background:#fff;text-align:left;font-weight:700;font-size:15px;padding:7px 5px 7px 15px;border-radius:5px;}
 /*03*/
 .con01 .item03 {grid-row-start:3;grid-row-end: 4;grid-column-start:1;grid-column-end:3;background:#fff;border:1px solid #97123d;box-shadow:5px 5px 10px -6px #ccc;padding-top:38px;display:flex;justify-content:center;color:#333;}
 .con01 .item03 figure {text-align:center;margin:0 40px;}
@@ -363,7 +363,8 @@ address {font-size:13px;margin-top:15px;font-weight:300;}
     .con01 .item02 {grid-row-start:4;grid-row-end:5;background:#97123d;color:#fff;padding-top:50px;box-shadow:5px 5px 10px -6px #ccc;}
     .con01 .item02 strong {display:block;font-size:4.5vw;margin-bottom:15px;}
     .con01 .item02 span {line-height:22px;font-size:3.1vw;font-weight:300;margin-bottom:28px;color:#ddd;}
-    .con01 .item02 select {color:#333;margin-top:25px;width:75%;border:none;background:#fff;text-align:center;font-weight:700;font-size:3vw;padding:7px 5px 7px 0;border-radius:5px;}
+    .con01 .item02 select {color:#333;margin-top:25px;width:75%;border:none;background:#fff;text-align:center;font-weight:700;font-size:3vw;padding:7px 0 7px;border-radius:5px;}
+
     /*03*/
     .con01 .item03 {grid-row-start:2;grid-row-end:3;grid-column-start:1;grid-column-end:2;background:#fff;border:1px solid #97123d;box-shadow:5px 5px 10px -6px #ccc;padding:40px 8vw 0;display:flex;flex-wrap:wrap;justify-content:center;color:#333;}
     .con01 .item03 figure {text-align:center;margin:0 4vw;}
