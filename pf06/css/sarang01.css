@@ -404,7 +404,7 @@ address {font-size:13px;margin-top:15px;font-weight:300;}
 
 
     /*con02*/
-    .con02 {padding:100px 0; background:#f2f2f2;color:#333;}
+    .con02 {padding:80px 0; background:#f2f2f2;color:#333;}
 
     .con02 .container {width:auto;margin:0 auto;padding:0 20px;text-align:center;}
     .con02 p {font-size:3.3vw;letter-spacing:0.4em;color:#97123d;margin-bottom:15px;text-indent:2px;}
@@ -430,7 +430,7 @@ address {font-size:13px;margin-top:15px;font-weight:300;}
 
 
     /*con03*/
-    .con03 {padding:100px 0; text-align:center;overflow:hidden;}
+    .con03 {padding:80px 0; text-align:center;overflow:hidden;}
     .con03 p {font-size:3.3vw;letter-spacing:0.4em;color:#97123d;margin-bottom:15px;}
     .con03 h2 {font-size:5.2vw;font-weight:500;margin-bottom:60px;}
     .con03 .container {width:auto;margin:0 auto;padding:0 20px;display:flex;flex-wrap:wrap;overflow:hidden;justify-content:center;}
@@ -468,7 +468,7 @@ address {font-size:13px;margin-top:15px;font-weight:300;}
 
 
     /*con04*/
-    .con04 {padding:100px 0 70px;background:url(../img/con04_bg.jpg) no-repeat center center/cover;text-align:center;}
+    .con04 {padding:80px 0 60px;background:url(../img/con04_bg.jpg) no-repeat center center/cover;text-align:center;}
     .con04 p {font-size:3.3vw;letter-spacing:0.4em;color:#97123d;margin-bottom:20px;}
     .con04 h2 {font-size:5.2vw;font-weight:500;margin-bottom:55px;}
     .con04 .container {width:auto;margin:0 auto;padding:0 20px;display:block;justify-content:center;}
