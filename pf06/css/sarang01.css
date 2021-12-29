@@ -127,8 +127,8 @@
 .con01 .item05 .sub {margin:40px auto 0;;color:#555;}
 #sub {margin-top:13px;}
 
-.con01 .item05 .sub input {background:#fff;border:1px solid #ddd;width:270px;outline:none;padding:12px;font-size:14px;}
-.con01 .item05 .long input {padding:12px 15px 120px;font-size:14px;}
+.con01 .item05 .sub input {background:#fff;border:1px solid #ddd;width:270px;outline:none;padding:12px;font-size:14px;margin-bottom:15px;}
+.con01 .item05 .sub input:nth-child(4) {padding:12px 15px 120px;font-size:14px;}
 .con01 .item05 a {display:block;width:270px;padding:15px 0;background:#97123d;color:#fff;margin:25px auto;}
 
 
@@ -397,13 +397,12 @@ address {font-size:13px;margin-top:15px;font-weight:300;}
     .con01 .item05 {grid-row-start:5;grid-row-end:6;grid-column-start:1;grid-column-end:2;background:#f4e7eb;padding-top:54px;box-shadow:5px 5px 10px -6px #ccc;}
     .con01 .item05 strong {display:block;font-size:4.5vw;font-weight:500;margin-bottom:15px;color:#333;}
     .con01 .item05 span {line-height:24px;font-weight:500;color:#555;font-size:3.1vw;}
-    .con01 .item05 .sub {margin:30px auto 0;;color:#555;}
+    .con01 .item05 .sub {margin:30px auto 0;color:#555;}
     #sub {margin-top:13px;}
 
-    .con01 .item05 .sub input {background:#fff;border:1px solid #ddd;width:75%;outline:none;padding:12px;font-size:2.9vw;}
-    .con01 .item05 .long input {padding:12px 15px 120px;font-size:2.9vw;}
+    .con01 .item05 .sub input {background:#fff;border:1px solid #ddd;width:75%;outline:none;padding:12px;font-size:2.9vw;margin-bottom:15px;}
+    .con01 .item05 .sub input:nth-child(4) {padding:12px 15px 120px;font-size:2.9vw;}
     .con01 .item05 a {display:block;width:75%;padding:15px 0;background:#97123d;color:#fff;margin:25px auto;font-size:3vw;}
-
 
 
 
