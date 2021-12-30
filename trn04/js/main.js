@@ -22,7 +22,6 @@ $('.pr_slider').slick({
     autoplaySpeed:2000,
     arrows:false,
     centerMode:true,
-    dots:true,
     slidesToShow:3,
     pauseOnHover:false,
     pauseOnFocus:false,
