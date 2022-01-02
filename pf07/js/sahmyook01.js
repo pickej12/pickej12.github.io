@@ -28,5 +28,16 @@ $('.tab_menu>ul>li').on('click',function(){
     $('.tab_content>div').eq(idx).addClass('on').siblings().removeClass('on');
     $this.addClass('on').siblings().removeClass('on');
 });
+
+
+
+
+$('.popUp figure').slick({
+    arrows:false,
+    autoplay:true,
+    autoplaySpeed:3000,
+    pauseOnHover:false,
+    dots:true,
+});
 //-------------------------------------------------------------------------------
 });
