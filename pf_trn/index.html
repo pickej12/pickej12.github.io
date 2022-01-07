@@ -25,7 +25,18 @@
 <div id="Wrap">
     <header id="header">
         <h1>
-            <a href="#intro">2022 kim's portfolio</a>
+            <a href="#intro">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 300"
+                    style="enable-background:new 0 0 500 300;" xml:space="preserve">
+                    <path class="st0" d="M493.23,150.74c-37.75,70.48-106.83,171.69-243.17,141.16C119,262.57-6.87,227.48,6.88,150.74 C19.73,79.06,111.3,41.71,250.06,9.58C380.9-20.72,524.65,92.09,493.23,150.74z" />
+                    <text transform="matrix(1 0 0 1 22.546 144.9197)">
+                        <tspan x="0" y="0" class="txt">2022</tspan>
+                        <tspan x="131.4" y="0" class="txt02">EUNJI's PF</tspan>
+                    </text>
+                </svg>
+
+            </a>
         </h1>
         <nav>
             <ul>
@@ -68,6 +79,10 @@
                 </div>
             </div>
             <div class="description">
+                <div class="gooey">
+                    <span>0</span>
+                    <span>1</span>
+                </div>
                 <h3>My work - 01</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam exercitationem, quidem eum quod eveniet voluptates libero repellendus quasi obcaecati doloribus corporis minima tempore temporibus aliquam fugiat? Fugit, commodi.</p>
                 <dl>
@@ -93,7 +108,25 @@
             </div>
         </div>
     </section>
-    <section class="section portfolio_02">02</section>
+    <section class="section portfolio_02">
+        <div class="box_mask">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px" y="0px" viewBox="0 0 400 400" style="enable-background:new 0 0 400 400;" xml:space="preserve">
+                <style type="text/css">
+                    .st7 {
+                        fill: #D7DF23;
+                    }
+                </style>
+                <defs>
+                    <mask id="photo-mask">
+                        <path class="st7"
+                            d="M325.29,394.96H72.54c-37.11,0-67.2-30.09-67.2-67.2V75.01c0-37.11,30.09-67.2,67.2-67.2h252.75 c37.11,0,67.2,30.09,67.2,67.2v252.75C392.5,364.88,362.41,394.96,325.29,394.96z" />
+                    </mask>
+                </defs>
+                <image mask="url(#photo-mask)" xlink:href="../lib/base/main_item02.jpg" />
+            </svg>
+        </div>
+    </section>
     <section class="section portfolio_03">03</section>
     <section class="section portfolio_04">04</section>
     <section class="section portfolio_05">05</section>
@@ -108,5 +141,15 @@
         </address>
     </footer>
 </div>
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <defs>
+      <filter id="bbq">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -5" result="bbq" />
+        <feBlend in="SourceGraphic" in="bbq" />
+    </filter>
+    </defs>
+  </svg>
 </body>
 </html>
