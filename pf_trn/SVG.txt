@@ -1,0 +1,9 @@
+https://greensock.com
+
+svg
+
+일러스트>도형생성>save/save as에서 svg저장>SVG Code> 소스 복사
+
+nanalog > svg설명 잘 되어 있는 블로그.
+
+

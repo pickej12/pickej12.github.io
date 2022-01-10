@@ -12,26 +12,10 @@ $(function(){
         },
     });
     
-    //My name is EunJi
+    //WEB is My Dream
     new Typed('.slogan_txt',{
         strings: ['Hello! Everyone', 'My name is EunJi'],
         typeSpeed:100,
     });
-
-    $('.cover_btn').on('click', function(){  //click mouseenter>마우스 올렸을 때/click mouseleave 마우스가 떨어졌을 때
-        $('#cover').slideToggle();
-    });
-
-    let cloneMenu = $('nav>ul').clone();
-    $('#cover').append(cloneMenu);
-
-    $('#cove a').on('click', function(){  //click mouseenter>마우스 올렸을 때/click mouseleave 마우스가 떨어졌을 때
-        $('#cover').slideUp();
-    });
-
-    $('#cover').on('scroll wheel touchmove', function(){
-        return false;
-    });
-
     //-----------------------------------------------------
     })
