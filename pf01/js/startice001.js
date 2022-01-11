@@ -13,7 +13,7 @@ $(function(){
     $('.main_visual').slick({
         arrows:false,
         autoplay:true,
-        autoplaySpeed:4000,
+        autoplaySpeed:3000,
         pauseOnHover:false,
     });
     $('.main_visual figure').eq(1).addClass('on');
@@ -41,11 +41,11 @@ $(function(){
 
 
 
-    // $(window).on('scroll',function(){
-    //     var sct=$(window).scrollTop();
+    $(window).on('scroll',function(){
+        var sct=$(window).scrollTop();
           
-    //     $('#right_pop').css({top:120+sct});
-    // });
+        $('#right_pop').css({top:120+sct});
+    });
 
 
 
