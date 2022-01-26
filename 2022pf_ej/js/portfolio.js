@@ -4,7 +4,7 @@ $(function(){
     let sc=$('.section');
     let sideBar=$('nav li');
     $('#main').fullpage({
-        anchors:['intro', 'portfolio_01', 'portfolio_02', 'portfolio_03', 'portfolio_04', 'portfolio_05', 'profile'],
+        anchors:['intro', 'portfolio_01', 'portfolio_02', 'portfolio_03', 'portfolio_04', 'training', 'profile'],
         afterLoad:function(origin, destination, direction){
             let idx=destination.index;
             sc.eq(idx).addClass('on').siblings().removeClass('on');
@@ -22,13 +22,9 @@ $(function(){
         });
     });
     
-    //My name is EunJi
-    // new Typed('.slogan_txt',{
-    //     strings: ['Hello! Everyone', 'My name is EunJi'],
-    //     typeSpeed:100,
-    // });
 
-    $('.mopen').on('click', function(){  //click mouseenter>마우스 올렸을 때/click mouseleave 마우스가 떨어졌을 때
+
+    $('.mopen').on('click', function(){  
         $(this).toggleClass('is-active');
         $('#cover').slideToggle();
     });
@@ -36,7 +32,7 @@ $(function(){
     let cloneMenu = $('nav>ul').clone();
     $('#cover').append(cloneMenu);
 
-    $('#cove a').on('click', function(){  //click mouseenter>마우스 올렸을 때/click mouseleave 마우스가 떨어졌을 때
+    $('#cove a').on('click', function(){  
         $('#cover').slideUp();
     });
 
@@ -44,5 +40,16 @@ $(function(){
         return false;
     });
 
+
+
+    //typed
+    new Typed('.slogan_txt',{
+        strings: ['기본을 중시하는 단단한 구현'],
+        typeSpeed:160,
+        cursorChar:"",
+        loop:true,
+        backSpeed:40,
+    });
+
     //-----------------------------------------------------
-    })
+});
