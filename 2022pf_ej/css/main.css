@@ -31,7 +31,7 @@ body {font-size:0.8rem;color:#333;}
 #header .line_f span:nth-child(2) {position:fixed;bottom:108px;left:0;width:100%;height:1px;background:#888;transition:0.8s;}
 
 /*INTRO*/
-.intro {position:relative;background:url(../img/bg_pattern03.png)#eaeaea;overflow:hidden;z-index:-2;}
+.intro {position:relative;background:#eaeaea;overflow:hidden;z-index:-2;}
 
 .line span {position:absolute;z-index:999;}
 .line span:nth-child(1) {bottom:0;right:9.4%;width:1px;height:0;background:#aaa;transition:0.8s 0.5s;}
@@ -86,7 +86,7 @@ body {font-size:0.8rem;color:#333;}
 /*portfolio section layout*/
 .section {overflow:hidden;}
 .section img {max-width:100%;}
-.section .mockup {background:url(../img/mac11.png) no-repeat center top/100%;padding:7.4% 12% 8% 12%;transform:scale(1.2)}
+.section .mockup {background:url(../img/mac11.png) no-repeat center top/100%;padding:7.4% 12% 8% 12%;}
 .container {position:relative;display:grid;grid-template-columns:repeat(2,1fr);gap:3rem;align-items:center;width:67.5rem;margin:0 auto;z-index:888;}
 .section .mockup figure {position:relative;padding-bottom:59.5%;overflow:hidden;border-radius:4px;}
 .section .mockup figure img {position:absolute;top:0;left:0;width:100%;transition:5s;cursor:pointer;}
@@ -114,8 +114,9 @@ body {font-size:0.8rem;color:#333;}
 
 
 /*pf01*/
-.portfolio_01 {background:url(../img/bg_pattern01.png);}
-.portfolio_01 .mockup {margin-;top:-7.5rem;}
+.portfolio_01 {background:url(../img/bg_pattern02.png);}
+.portfolio_01 .mockup {margin-top:-8.5rem;transform:translateY(-50rem) scale(1.15);}
+.portfolio_01.on .mockup {transform:translateY(0) scale(1.15);transition:0.8s;}
 .portfolio_01 .description {margin-top:5rem;}
 .portfolio_01 .description p {color:#8e60bc;}
 
@@ -128,8 +129,9 @@ body {font-size:0.8rem;color:#333;}
 .portfolio_01 .description ul a:hover {background:#6f42c1;border:none;color:#f2f2f2;border-radius:12px;box-shadow: 3px 3px 5px rgb(0 0 0 / 30%);}
 
 
-.portfolio_01 .circle_sec {position:absolute;bottom:42px;right:-3%;z-index:1;}
+.portfolio_01 .circle_sec {position:absolute;bottom:42px;right:-100%;z-index:1;}
 .portfolio_01 .circle_sec span {display:block;width:38.5rem;height:38.5rem;border-radius:50%;border:1.5px solid #c7a9e7;opacity:0.7;}
+.portfolio_01.on .circle_sec {right:-3%;rotate:(1440deg);transition:1.5s;}
 
 
 
@@ -150,14 +152,19 @@ body {font-size:0.8rem;color:#333;}
 .portfolio_02 .description ul a:hover {background:#4e813b;border:none;color:#f2f2f2;border-radius:12px;box-shadow: 3px 3px 5px rgb(0 0 0 / 30%);}
 
 
-.portfolio_02 .circle_sec {position:absolute;bottom:28px;left:4%;z-index:1;}
+.portfolio_02 .circle_sec {position:absolute;bottom:28px;left:-50rem;z-index:1;}
 .portfolio_02 .circle_sec span {display:block;width:42rem;height:42rem;border-radius:50%;border:1.5px solid #999;opacity:0.7;}
+.portfolio_02.on .circle_sec {left:4%;transform:rotate(1440deg);transition:2s;}
+
+.portfolio_02 .mockup {transform:translatex(50rem) scale(1.15);}
+.portfolio_02.on .mockup {transform:translateX(0) scale(1.15);transition:0.8s;}
 
 
 
 /*pf03*/
 .portfolio_03 {background:url(../img/bg_pattern02.png)}
-.portfolio_03 .mockup {margin-top:-7.5rem;}
+.portfolio_03 .mockup {margin-top:-7.5rem;transform:translateY(50rem) scale(1.15);}
+.portfolio_03.on .mockup {transform:translateY(0) scale(1.15);transition:0.8s;}
 .portfolio_03 .description {margin-top:5rem;}
 .portfolio_03 .description p {color:#d49a9a;}
 .portfolio_03 .description h3 {color:#B88D7E;}
@@ -172,14 +179,15 @@ body {font-size:0.8rem;color:#333;}
 .portfolio_03 .description ul a:hover {background:#B88D7E;border:none;color:#f2f2f2;border-radius:12px;box-shadow: 3px 3px 5px rgb(0 0 0 / 30%);}
 
 
-.portfolio_03 .circle_sec {position:absolute;bottom:78px;right:20%;z-index:1;}
+.portfolio_03 .circle_sec {position:absolute;top:-50rem;right:20%;z-index:1;}
 .portfolio_03 .circle_sec span {display:block;width:39rem;height:39rem;border-radius:50%;border:1.5px solid #B88D7E;opacity:0.7;}
+.portfolio_03.on .circle_sec {top:5.4rem;transform:rotate(1440deg);transition:2s;}
 
 
 .portfolio_03 .gooyee {position:absolute;top:30%;right:-52%;width:100%;height:100vh;z-index:2;}
 .portfolio_03 .gooyee {filter:url('#bbq');overflow:visible;}
 .portfolio_03 .gooyee:before {content:"";display:block;width:48.5rem;height:48.5rem;background:#fbf5f5;border-radius:50%;position:absolute;top:0;left:0;}
-.portfolio_03 .gooyee:after {content:"";display:block;width:6rem;height:6rem;background:#fbf5f5;border-radius:50%;position:absolute;top:80%;right:-30%;animation:circle_move 5s infinite;}
+.portfolio_03 .gooyee:after {content:"";display:block;width:6rem;height:6rem;background:#fbf5f5;border-radius:50%;position:absolute;top:80%;right:-100%;animation:circle_move 7s infinite;}
 
 @keyframes circle_move {
     0% {top:22%;right:80%;opacity:1;}
@@ -191,8 +199,12 @@ body {font-size:0.8rem;color:#333;}
 /*pf04*/
 .portfolio_04 {background:#f3f3f3;}
 /* .portfolio_04 .mockup {margin-top:-8.5rem;} */
-.portfolio_04 .description {margin:0 2rem 0 5rem}
+.portfolio_04 .description {margin:0 2rem 0 5rem;transform:translateX(10rem);opacity:0;}
+.portfolio_04.on .description {transform:translateX(0);opacity:1;transition:0.8s;}
 .portfolio_04 .description p {color:#97123D;}
+
+.portfolio_04 .mockup {transform:translatex(-10rem) scale(1.15);opacity:0;}
+.portfolio_04.on .mockup {transform:translateX(0) scale(1.15);opacity:1;transition:0.8s;}
 
 
 .portfolio_04 .description dd span:nth-of-type(1) {background:#97123D;}
