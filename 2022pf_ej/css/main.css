@@ -114,7 +114,8 @@ body {font-size:0.8rem;color:#333;}
 
 
 /*pf01*/
-.portfolio_01 .mockup {margin-top:-7.5rem;}
+.portfolio_01 {background:url(../img/bg_pattern01.png);}
+.portfolio_01 .mockup {margin-;top:-7.5rem;}
 .portfolio_01 .description {margin-top:5rem;}
 .portfolio_01 .description p {color:#8e60bc;}
 
