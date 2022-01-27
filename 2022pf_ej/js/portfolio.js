@@ -21,6 +21,16 @@ $(function(){
             sct > secTop - 400 ? $(this).addClass('on') : $(this).removeClass('on'); 
         });
     });
+
+
+
+    var cursor = document.getElementById('cursor');
+    document.addEventListener('mousemove',function(e){
+        var x = e.clientX; 
+        var y = e.clientY;
+        cursor.style.left = e.pageX + "px";
+        cursor.style.top = e.pageY + "px";
+    });
     
 
 
