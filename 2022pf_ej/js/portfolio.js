@@ -39,8 +39,16 @@ $(function(){
         $('#cover').slideToggle();
     });
 
+
+
     let cloneMenu = $('nav>ul').clone();
     $('#cover').append(cloneMenu);
+
+
+    $('#cover a').on('click', function(){  
+        $('.mopen').toggleClass('is-active');
+        $('#cover').slideUp();
+    });
 
     $('#cove a').on('click', function(){  
         $('#cover').slideUp();
