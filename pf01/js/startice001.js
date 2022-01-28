@@ -4,16 +4,15 @@ $(function(){
 
 
     $('#top_banner i').on('click',function(){
-        $(this).parent().parent().slideUp();
+        $(this).parent().parent().parent().slideUp();
     });
-
 
 
 
     $('.main_visual').slick({
         arrows:false,
         autoplay:true,
-        autoplaySpeed:3000,
+        autoplaySpeed:4000,
         pauseOnHover:false,
     });
     $('.main_visual figure').eq(1).addClass('on');
@@ -40,12 +39,15 @@ $(function(){
 
 
 
-
-    $(window).on('scroll',function(){
-        var sct=$(window).scrollTop();
-          
+    $(window).on('scroll', function(){
+        let sct=$(window).scrollTop();
+        $('.ani').each(function(){
+            let secTop = $(this).offset().top;
+            sct > secTop - 400 ? $(this).addClass('on') : $(this).removeClass('on'); 
+        });
         $('#right_pop').css({top:120+sct});
     });
+
 
 
 
