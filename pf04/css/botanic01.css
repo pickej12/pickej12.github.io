@@ -29,7 +29,8 @@
 #main_visual figure {background:url(../img/main_visual.jpg) no-repeat center center/cover;height:825px;}
 #main_visual .container {width:1200px;padding:225px 15px 0;margin:0 auto;color:#fff;letter-spacing:-0.025em;}
 #main_visual p {font-size:32px;font-weight:300;margin-bottom:25px;letter-spacing:-0.04em;}
-#main_visual h2 {font-size:68px;font-weight:500;letter-spacing:0;font-family: 'Noto Serif KR', sans-serif;}
+#main_visual h2 {position:relative;font-size:68px;font-weight:500;letter-spacing:0;font-family: 'Noto Serif KR', sans-serif;}
+/* #main_visual h2:after {position:absolute;bottom:-20px;left:-10px;display:block;content:"";width:55%;height:36px;background:#90be45;border-radius:10px 8px 22px 10px;} */
 #main_visual h2 i {font-size:48px;font-weight:500;letter-spacing:0;}
 
 
@@ -194,7 +195,7 @@ address {font-size:14px;font-weight:300;}
 
 
 #toTop {display:none;position:fixed;bottom:150px;right:100px;}
-#toTop i {font-size:30px;color:#78b319;width:60px;height:60px;line-height:55px;text-align:center;border:2px solid #78b319;background:#fff;border-radius:50%;}
+#toTop i {font-size:30px;color:#78b319;width:60px;height:60px;line-height:55px;text-align:center;background:#fff;border-radius:50%;box-shadow:3px 3px 5px rgba(120, 179, 25, 0.7);}
 
 
 
@@ -226,18 +227,9 @@ address {font-size:14px;font-weight:300;}
     #header .right strong {margin-right:60px;font-weight:500;font-size:17px;} 
 
 
-
-    /* 밑에 반응형 다 해주고 mopen 네비 너비 확인해보기 */
-
-    /* 
-    #header .mopen {display:block;position:fixed;top:31px;right:20px;background:#78b319;width:42px;height:37px;border-radius:50% 0;z-index:999;}
-    #header .mopen span:nth-child(1) {color:#333;line-height:37px;font-size:15px;text-align:center;font-weight:500;transform:translateX(50px);padding-left:6px;}
-    #header .mopen span:nth-child(2) {color:#333;line-height:37px;font-size:0;text-align:center;font-weight:500;transform:translateX(50px);padding-left:6px;}
-    #header .mopen.on span:nth-child(1) {color:#333;line-height:37px;font-size:0;text-align:center;font-weight:500;transform:translateX(50px);padding-left:6px;}
-    #header .mopen.on span:nth-child(2) {color:#333;line-height:37px;font-size:15px;text-align:center;font-weight:500;transform:translateX(50px);padding-left:6px;} */
     
     #header .mopen {display:block;position:fixed;top:33px;right:28px;z-index:999;padding:0 auto;}
-    #header .mopen:after {content:"";display:block;width:30px;height:30px;background:#78b319;transform:scale(1.45);position:relative;border-radius:50% 0;padding:5px;}
+    #header .mopen:after {content:"";display:block;width:28px;height:30px;background:#78b319;transform:scale(1.45);position:relative;border-radius:50% 0;padding:5px;}
     #header .mopen span {display:block;width:100%;height:2px;background:#fff;position:absolute;transition:0.3s;transform:scale(0.7);z-index:1;opacity:50%;}
     #header .mopen span:nth-child(1) {top:7px}
     #header .mopen span:nth-child(2) {top:14px;}
@@ -374,7 +366,7 @@ address {font-size:14px;font-weight:300;}
     #con04 .left strong {font-weight:300;color:#555;font-size:1.85vh}
     #con04 .left:after {content:"";display:block;width:2px;height:20px;background:saddlebrown;margin:2.8vh auto;}
 
-    #con04 .poster {width:100%;padding:0 20px;margin-top:-10px;}
+    #con04 .poster {width:100%;padding:0 20px;margin-top:-30px;}
     #con04 img {width:100%;height:auto;}
     #con04 figure {position:relative;padding:0 0 0 0;}
     #con04 .poster a {position:absolute;width:100%;height:22vh;background:rgba(78, 129, 59, 85%);bottom:0;left:0;padding:5vh 0 0 0;color:#fff;margin-left:0;}
@@ -383,12 +375,12 @@ address {font-size:14px;font-weight:300;}
     #con04 .poster em {font-weight:300;line-height:3vh;font-size:1.9vh;}
     #con04 .poster:after {content:"";display:block;width:auto; height:1px;background:#999;margin-top:10vh}
 
-    #con04 .slick-dots {position:absolute;top:-8.5vh;left:50%;transform:translateX(-50%);display:flex;}
+    #con04 .slick-dots {position:absolute;top:-8.5vh;left:50%;transform:translateX(-50%);display:flex;cursor: pointer;}
     #con04 .slick-dots li {width:3.8vh;height:5px;background:saddlebrown;transition:0.1s;}
     #con04 .slick-dots li.slick-active {background:#78b319;}
     #con04 .slick-dots li button {display:none;}
 
-    #con04 .btn i {font-size:3vh;position:absolute;top:76vh;left:88%;color:#78b319;background:rgba(255, 255, 255, 0.85);width:5.5vh;height:5.5vh;border-radius:50%;border:2px solid #78b319;line-height:5.1vh;}
+    #con04 .btn i {display:none;}
 
 
 
@@ -436,7 +428,7 @@ address {font-size:14px;font-weight:300;}
 
 
     #toTop {display:none;position:fixed;bottom:85px;right:23px;}
-    #toTop i {font-size:26px;color:#78b319;width:50px;height:50px;line-height:45px;text-align:center;border:2px solid #78b319;background:#fff;border-radius:50%;}
+    #toTop i {font-size:26px;color:#78b319;width:50px;height:50px;line-height:45px;text-align:center;background:#fff;border-radius:50%;}
 
 }
 

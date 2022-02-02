@@ -35,10 +35,10 @@ $(function(){
    });
 
 
-    $(".tab li").on("click", function(){
+    $('.tab li').on('click', function(){
         var idx=$(this).index();
-        $(".slider figure").slick("slickGoTo", idx);
-        $(this).addClass("on").siblings().removeClass("on");
+        $('.slider figure').slick('slickGoTo', idx);
+        $(this).addClass('on').siblings().removeClass('on');
     });
 
 
