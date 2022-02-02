@@ -30,10 +30,10 @@ $(function(){
         autoplaySpeed:2000,
         slidesToShow:3,
     });
-    $('#con01 .btn i.xi-angle-left').on('click',function(){
+    $('.con01 .btn i.xi-angle-left').on('click',function(){
         $('.pr_slider').slick('slickPrev');
     });
-    $('#con01 .btn i.xi-angle-right').on('click',function(){
+    $('.con01 .btn i.xi-angle-right').on('click',function(){
         $('.pr_slider').slick('slickNext');
     });
 
