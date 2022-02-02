@@ -51,6 +51,7 @@ $('.dr_slider').slick({
           breakpoint:769,
           settings: {
           slidesToShow:2,
+          autoplaySpeed:1000,
           }
         },
     ] 
