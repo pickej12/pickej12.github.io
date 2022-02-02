@@ -3,7 +3,6 @@ $(function(){
 $('#main').fullpage({
     responsiveWidth:769,
     anchors:['c01','c02','c03','c04','c05','footer'],
-    // navigation:true,
     afterLoad:function(origin, destination, direction){
         let txt = $('.navbar>li').eq(destination.index).find('a').text();
         $('.section').eq(destination.index).addClass("on").siblings().removeClass('on');
@@ -29,6 +28,11 @@ $('.main_slider').slick({
     dots:true,
 });
 
+$('.main_slider').eq(0).addClass('on');
+$('.main_slider').on('afterChange',function(e,s,c){
+    $('.main_slider').eq(c+0).addClass('on').siblings().removeClass('on');
+});
+//질문! 슬라이드 될때 올라오는 법 //
 
 
 
@@ -129,8 +133,6 @@ $('nav .depth01>li').on('click', function(){
     if($('nav').hasClass('on')) {
         $(this).addClass('on').siblings().removeClass('on');
         $(this).siblings().find('.depth03').stop().slideUp();
-        //$('.depth03').stop().slideUp();
-        //$(this).find('.depth02').stop().slideToggle();
     }
 
 });
