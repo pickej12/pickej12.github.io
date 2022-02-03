@@ -35,7 +35,6 @@ $('.main_slider').eq(1).addClass('on');
 $('.main_slider').on('afterChange',function(e,s,c){
     $('.main_slider figure').eq(c+1).addClass('on').siblings().removeClass('on');
 });
-//질문! 슬라이드 될때 올라오는 법 //
 
 
 
