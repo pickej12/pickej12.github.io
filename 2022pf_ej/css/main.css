@@ -98,9 +98,9 @@ body {font-size:0.8rem;color:#333;}
 .section .mockup {background:url(../img/mac11.png) no-repeat center top/100%;padding:7.4% 12% 8% 12%;}
 .container {position:relative;display:grid;grid-template-columns:repeat(2,1fr);gap:3rem;align-items:center;width:67.5rem;margin:0 auto;z-index:888;}
 .section .mockup figure {position:relative;padding-bottom:59.5%;overflow:hidden;border-radius:2px;}
-.section .mockup figure img {position:absolute;top:0;left:0;width:100%;transition:8s 1s;cursor:pointer;}
+.section .mockup figure img {position:absolute;top:0;left:0;width:100%;transition:7s 1s;cursor:pointer;}
 .section.on .mockup figure img {transform:translateY(-100%);top:100%;}
-.section .mockup figure:hover img {transform:translateY(100%);top:0;} /*여기 여기 질문 질문 top에서 끊기는 법*/
+.section .mockup figure:hover img {transform:translateY(0);top:0;}
 
 .section .description {margin-left:6rem;} 
 .section .description p {font-family:'Montserrat', sans-serif;font-size:14px;font-weight:600;margin-bottom:28px;letter-spacing:-0.025em;}
@@ -119,13 +119,16 @@ body {font-size:0.8rem;color:#333;}
 .section .description ul a {display:block;width:205px;height:35px;line-height:35px;color:#555;border:1px solid #ccc;background:rgba(255,255,255,0.9);font-size:16px;font-weight:500;text-align:center;transition:0.3s;box-shadow: 3px 3px 5px rgba(119, 119, 119, 0.3);}
 
 
+
 .section .name_sec {font-family:'Open Sans',sans-serif;position:absolute;top:39%;left:5.2%;font-size:14px;font-weight:bold;color:#000;letter-spacing:1em;writing-mode:vertical-lr;}
 
 
 
 /*pf01*/
-.portfolio_01 .mockup {transform:translateX(3rem) scale(1.2);opacity:0;}
-.portfolio_01.on .mockup {transform:translateX(0) scale(1.2);opacity:1;transition:0.8s;}
+.portfolio_01 {background:url(../img/bg_pattern02.png);}
+.portfolio_01 .container {margin:0 350px;}
+.portfolio_01 .mockup {transform:translateX(3rem) scale(1.25);opacity:0;margin-top:-30px;}
+.portfolio_01.on .mockup {transform:translateX(0) scale(1.25);opacity:1;transition:0.8s;}
 .portfolio_01 .description p {color:#8e60bc;}
 
 
@@ -135,19 +138,19 @@ body {font-size:0.8rem;color:#333;}
 
 
 .portfolio_01.on .description ul li:nth-of-type(1) a {background:#6f42c1;border:none;color:#f2f2f2;border-radius:12px;box-shadow: 3px 3px 5px rgb(0 0 0 / 30%);}
-.portfolio_01 .description ul a:hover {background:#6f42c1;border:none;color:#f2f2f2;border-radius:12px;box-shadow: 3px 3px 5px rgb(0 0 0 / 30%);}
+.portfolio_01 .description ul a:hover {border:1px solid #6f42c1;color:#6e278f;border-radius:12px;box-shadow: 3px 3px 5px rgb(0 0 0 / 30%);}
 
 
 .portfolio_01 .circle_sec {position:absolute;bottom:42px;right:-100%;z-index:1;}
-.portfolio_01 .circle_sec span {display:block;width:38.5rem;height:38.5rem;border-radius:50%;border:1.5px solid #cfc2dd;opacity:0.6;}
-.portfolio_01.on .circle_sec {right:-1%;rotate:(1440deg);transition:1.5s;}
+.portfolio_01 .circle_sec span {display:block;width:42rem;height:42rem;border-radius:50%;border:1.5px solid #cfc2dd;opacity:0.6;}
+.portfolio_01.on .circle_sec {right:-1.5%;rotate:(1440deg);transition:1.5s;}
 
-.xi-apps {position:absolute;top:-300px;right:-20rem;font-size:2000px;transform:rotate(-45deg);color:#6e278f;opacity:0.05;}
+.xi-border-clear {position:absolute;top:-300px;right:-20rem;font-size:2000px;transform:rotate(-45deg);color:#f6f6f6;opacity:1;}
 
 
 
 /*pf02*/
-.portfolio_02 {background:#f3f3f3;}
+.portfolio_02 {background:linear-gradient(#f2f2f2,#eee);}
 .portfolio_02 .description {margin:0 2rem 0 4rem}
 .portfolio_02 .description h3 {margin-bottom:38px}
 .portfolio_02 .description strong {display:block;margin-top:21px;}
@@ -159,15 +162,15 @@ body {font-size:0.8rem;color:#333;}
 .portfolio_02 .description dd span:nth-of-type(3) {background:#90be45;}
 
 .portfolio_02.on .description ul li:nth-of-type(1) a {background:#4e813b;border:none;color:#f2f2f2;border-radius:12px;box-shadow: 3px 3px 5px rgb(0 0 0 / 30%);}
-.portfolio_02 .description ul a:hover {background:#4e813b;border:none;color:#f2f2f2;border-radius:12px;box-shadow: 3px 3px 5px rgb(0 0 0 / 30%);}
+.portfolio_02 .description ul a:hover {border:1px solid #4e813b;color:#4e813b;border-radius:12px;box-shadow: 3px 3px 5px rgb(0 0 0 / 30%);}
 
 
 .portfolio_02 .circle_sec {position:absolute;bottom:28px;left:-50rem;z-index:1;}
 .portfolio_02 .circle_sec span {display:block;width:42rem;height:42rem;border-radius:50%;border:1.5px solid #dcdcdd;opacity:0.7;}
-.portfolio_02.on .circle_sec {left:4%;transform:rotate(1440deg);transition:2s;}
+.portfolio_02.on .circle_sec {left:3.5%;transform:rotate(1440deg);transition:2s;}
 
-.portfolio_02 .mockup {transform:translatex(50rem) scale(1.2);}
-.portfolio_02.on .mockup {transform:translateX(0) scale(1.2);transition:0.8s;}
+.portfolio_02 .mockup {transform:translatex(50rem) scale(1.25);margin-top:-30px;}
+.portfolio_02.on .mockup {transform:translateX(0) scale(1.25);transition:0.8s;}
 
 
 
@@ -186,7 +189,7 @@ body {font-size:0.8rem;color:#333;}
 .portfolio_03 .description dd span:nth-of-type(3) {background:#FCFAF8;border:1px solid #ddd;}
 
 .portfolio_03.on .description ul li:nth-of-type(1) a {background:#B88D7E;border:none;color:#f2f2f2;border-radius:12px;box-shadow: 3px 3px 5px rgb(0 0 0 / 30%);}
-.portfolio_03 .description ul a:hover {background:#B88D7E;border:none;color:#f2f2f2;border-radius:12px;box-shadow: 3px 3px 5px rgb(0 0 0 / 30%);}
+.portfolio_03 .description ul a:hover {border:1px solid #B88D7E;color:#B88D7E;border-radius:12px;box-shadow: 3px 3px 5px rgb(0 0 0 / 30%);}
 
 
 .portfolio_03 .circle_sec {position:absolute;top:-50rem;right:20%;z-index:1;}
@@ -207,9 +210,9 @@ body {font-size:0.8rem;color:#333;}
 
 
 /*pf04*/
-.portfolio_04 {background:#f3f3f3;}
-.portfolio_04 .mockup {transform:translateY(-50rem) scale(1.2);}
-.portfolio_04.on .mockup {transform:translateY(0) scale(1.2);transition:0.8s;}
+.portfolio_04 {background:linear-gradient(#f2f2f2,#eee);}
+.portfolio_04 .mockup {transform:translateY(-50rem) scale(1.25);}
+.portfolio_04.on .mockup {transform:translateY(0) scale(1.25);transition:0.8s;}
 .portfolio_04 .description p {color:#064793;}
 
 
@@ -218,12 +221,12 @@ body {font-size:0.8rem;color:#333;}
 .portfolio_04 .description dd span:nth-of-type(3) {background:#03B9C9;}
 
 .portfolio_04.on .description ul li:nth-of-type(1) a {background:#1258a7;border:none;color:#f2f2f2;border-radius:12px;box-shadow: 3px 3px 5px rgb(0 0 0 / 30%);}
-.portfolio_04 .description ul a:hover {background: #1258a7;border:none;color:#f2f2f2;border-radius:12px;box-shadow: 3px 3px 5px rgb(0 0 0 / 30%);}
+.portfolio_04 .description ul a:hover {border:1px solid #1258a7;color:#1258a7;border-radius:12px;box-shadow: 3px 3px 5px rgb(0 0 0 / 30%);}
 
 
-.portfolio_04 .circle_sec {position:absolute;bottom:-50rem;right:9%;z-index:1;}
+.portfolio_04 .circle_sec {position:absolute;bottom:-50rem;left:4.5%;z-index:1;}
 .portfolio_04 .circle_sec span {display:block;width:36rem;height:36rem;border-radius:50%;border:1.5px solid #bfc9d4;opacity:0.6;}
-.portfolio_04.on .circle_sec {bottom:37px;transform:rotate(1440deg);transition:2s;}
+.portfolio_04.on .circle_sec {bottom:37px;transform:rotate(1440deg);transition:1.5s;}
 
 
 
@@ -233,8 +236,8 @@ body {font-size:0.8rem;color:#333;}
 .portfolio_05.on .description {transform:translateX(0);opacity:1;transition:0.8s;}
 .portfolio_05 .description p {color:#97123D;}
 
-.portfolio_05 .mockup {transform:translatex(-10rem) scale(1.2);opacity:0;}
-.portfolio_05.on .mockup {transform:translateX(0) scale(1.2);opacity:1;transition:0.8s;}
+.portfolio_05 .mockup {transform:translatex(-10rem) scale(1.25);opacity:0;margin-top:-30px;}
+.portfolio_05.on .mockup {transform:translateX(0) scale(1.25);opacity:1;transition:0.8s;}
 
 
 .portfolio_05 .description dd span:nth-of-type(1) {background:#97123D;}
@@ -242,7 +245,7 @@ body {font-size:0.8rem;color:#333;}
 .portfolio_05 .description dd span:nth-of-type(3) {background:#f3f3f3;border:1px solid #ccc;}
 
 .portfolio_05.on .description ul li:nth-of-type(1) a {background:#555;border:none;color:#f2f2f2;border-radius:12px;box-shadow: 3px 3px 5px rgb(0 0 0 / 30%);}
-.portfolio_05 .description ul a:hover {background:#555;border:none;color:#f2f2f2;border-radius:12px;box-shadow: 3px 3px 5px rgb(0 0 0 / 30%);}
+.portfolio_05 .description ul a:hover {border:1px solid #555;color:#555;border-radius:12px;box-shadow: 3px 3px 5px rgb(0 0 0 / 30%);}
 
 
 .portfolio_05 .circle_sec span {position:absolute;display:block;}
@@ -363,6 +366,6 @@ body {font-size:0.8rem;color:#333;}
 #cover ul:after {content:"";display:block;width:110%;height:110%;border-bottom:0.75px solid #666;border-right:1.5px solid #888;position:absolute;bottom:-10px;right:-10px;z-index:-1;}
 
 #cover ul li:hover {font-weight:500;}
-/* 
-* {outline:1px solid #f00;} */
+
+/* * {outline:1px solid #f00;} */
 
