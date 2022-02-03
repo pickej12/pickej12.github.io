@@ -32,10 +32,11 @@
 #main_visual h2 {position:relative;font-size:68px;font-weight:500;letter-spacing:0;font-family: 'Noto Serif KR', sans-serif;}
 /* #main_visual h2:after {position:absolute;bottom:-20px;left:-10px;display:block;content:"";width:55%;height:36px;background:#90be45;border-radius:10px 8px 22px 10px;} */
 #main_visual h2 i {font-size:48px;font-weight:500;letter-spacing:0;animation:bloom 5s forwards;}
+#main_visual h2 span {animation:bloom 10s forwards;}
 
 @keyframes bloom {
-    0% {transform:scale(0);opacity:0;}
-    50% {transform:scale(0.5);opacity:0.5;}
+    0% {transform:scale(0.2);opacity:0.3;}
+    60% {transform:scale(0.3);opacity:0.5;}
     100% {transform:scale(1);opacity:1;}
 }
 
