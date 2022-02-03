@@ -2,7 +2,7 @@ $(function(){
 //-------------------------------------------------------------------------------
 $('#main').fullpage({
     responsiveWidth:769,
-    anchors:['c01','c02','c03','c04','c05','footer'],
+    anchors:['c01','c02','c03','c04','footer'],
     afterLoad:function(origin, destination, direction){
         let txt = $('.navbar>li').eq(destination.index).find('a').text();
         $('.section').eq(destination.index).addClass("on").siblings().removeClass('on');
@@ -10,6 +10,9 @@ $('#main').fullpage({
         if(!$('nav').hasClass('on')) {
             destination.index===0 ? $('.header').fadeIn() : $('.header').slideUp();
         }
+        //메뉴를 클릭했을 떄 헤드에서 스타일을 때준다.
+        //if(!$('nav').hasClass('on')) $('.header').removeAttr('style');
+        
         
     },
     
@@ -28,9 +31,9 @@ $('.main_slider').slick({
     dots:true,
 });
 
-$('.main_slider').eq(0).addClass('on');
+$('.main_slider').eq(1).addClass('on');
 $('.main_slider').on('afterChange',function(e,s,c){
-    $('.main_slider').eq(c+0).addClass('on').siblings().removeClass('on');
+    $('.main_slider figure').eq(c+1).addClass('on').siblings().removeClass('on');
 });
 //질문! 슬라이드 될때 올라오는 법 //
 
@@ -123,7 +126,9 @@ $(".siteMap").on("click", function(){
 
 
 $('.mopen').on('click', function(){
+    $('.header').removeAttr('style');
     $(this).toggleClass('on');
+    //$('.header').slideToggle();
     $('nav').toggleClass('on');
 })
 
