@@ -12,7 +12,7 @@ body {font-size:0.8rem;}
 #header {position:fixed;top:0;left:0;width:100%;min-width:95rem;padding:0 3rem;line-height:5rem;color:var(--lc);font-size:1rem;transition:0.5s;z-index:999;}
 
 #header .headerwrap {display:flex;padding:0 3rem;}
-#header .search_form {display:none;background:var(--dc);color:var(--lc);text-align:center;}
+#header .search_form {display:none;background:var(--mc);color:var(--lc);text-align:center;}
 #header .search_form form {display:inline-block;border-bottom:1px solid var(--dd);line-height:1.5;padding:0.5rem;}
 #header .search_form input {background:transparent;outline:none;border:none;}
 #header .search_form input:focus {color:var(--lc);}
@@ -65,7 +65,7 @@ body {font-size:0.8rem;}
 
 #mainVisual .search_box .case {display:flex;align-items:center;}
 #mainVisual .search_box .case>a {display:block;width:5rem;height:5rem;background:var(--dd) url(../img/icon.png) -10rem 0rem;margin-right:2rem;text-indent:-9999rem;border-radius:50%;transition:0.5s;}
-#mainVisual .search_box .case>a:hover {background:var(--dd) url(../img/icon.png) -10rem -20rem;}
+#mainVisual .search_box .case>a:hover {background:var(--dd) url(../img/icon.png) -10rem -10rem;}
 
 #mainVisual .search_box .txt h3 {font-size:1.75rem;font-weight:700;margin-bottom:0.5rem;}
 #mainVisual .search_box .txt p {font-size:0.75rem;font-weight:300;margin-bottom:0.5rem;}
@@ -119,7 +119,7 @@ body {font-size:0.8rem;}
 #product h2:after {content:"";display:block;width:5rem;height:0.2rem;background:var(--mc);margin:0.5rem auto 1rem auto;}
 #product p {font-size:0.75rem;font-weight: 300;margin-bottom:2rem;}
 
-#product .container {}
+
 #product .container figure {position:relative;width:27.5rem;height: 17.5rem;margin:0 0.5rem;}
 #product .container figure .case {position:absolute;top:50%;left:0;width:100%;height:10rem;transform:translateY(-50%);border:4px solid transparent;transition:0.5s;}
 
@@ -148,7 +148,7 @@ body {font-size:0.8rem;}
 #showroom .container .left {position:relative;flex:7;height:23rem;background:url(../img/img_service_showroom.jpg) no-repeat center center/100% 100%;}
 #showroom .container .right {flex:5;height:23rem;padding:4rem 3rem;}
 
-#showroom .container .left .txt {position:absolute;bottom:0;left:5rem;color:var(--lc);transition:0.5s;}
+#showroom .container .left .txt {position:absolute;bottom:1rem;left:5rem;color:var(--lc);transition:0.5s;}
 #showroom .container .left:hover .txt {bottom:4rem;}
 #showroom .left h3 {font-size:1.65rem;font-weight:700;}
 #showroom .left h3:after {content:"";display:block;width:2rem;height:0.15rem;background:var(--lc);margin:2rem 0;transition:0.5s;}
@@ -206,7 +206,7 @@ body {font-size:0.8rem;}
 
 
 #toTop {display:none;position:fixed;bottom:10rem;right:5rem;}
-#toTop i {font-size:2rem;padding:0.5rem;background:var(--lc);border:2px solid var(--mc);border-radius:50%;}
+#toTop i {font-size:1.5rem;padding:0.8rem;background:var(--lc);border:2px solid var(--mc);border-radius:50%;}
 
 
 #popUp {position:fixed;top:10rem;left:10rem;border:0.2rem solid var(--mc);background:var(--lc);text-align:center;padding:3rem 1.5rem;line-height:1.45;cursor:pointer;}
