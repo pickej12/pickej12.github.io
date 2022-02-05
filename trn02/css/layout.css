@@ -164,10 +164,10 @@ footer .top {text-align:center;font-size:0;line-height:5rem;border-bottom:1px so
 
 .navbar {position:fixed;top:50%;right:3rem;transform:translateY(-50%);}
 .navbar>li a {display:block;width:0.75rem;height:0.75rem;font-size:0;margin:0.3rem auto;text-align:center;position:relative;}
-.navbar>li a:after {content:"\e914";font-family:xeicon!important;font-size:0.3rem;display:inline-block;background:#ddd;border-radius:50%;text-align:center;margin:auto;transition:0.5s;}
+.navbar>li a:after {content:"\e914";font-family:xeicon!important;color:#eee;font-size:0.3rem;display:inline-block;background:#333;border-radius:50%;text-align:center;margin:auto;transition:0.5s;}
 .navbar>li.on a:after {transform:scale(2.5) rotate(180deg);}
 
-.now {position:fixed;top:50%;left:3rem;transform:translateY(-50%);}
+.now {position:fixed;top:50%;left:3rem;transform:translateY(-50%);writing-mode:vertical-lr;color:#666;}
 
 .wheel {position:absolute;bottom:3rem;left:50%;transform:translateX(-50%);width:2rem;height:3.2rem;border:3px solid rgba(255,255,255,0.5);border-radius:0.5rem 0.5rem 0.8rem 0.8rem;font-size:0;z-index:998;}
 .wheel span {display:block;width:0.2rem;height:0.8rem;background:rgba(255,255,255,0.5);position:absolute;top:0.6rem;left:50%;transform:translateX(-50%);border-radius:0.1rem;animation:wheel 0.7s infinite;}
