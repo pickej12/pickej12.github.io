@@ -90,6 +90,7 @@ $(function(){
         	}else{
         		Rsd.not('.slick-initialized').slick(slickOptions);
         	}
-        });
+    });
+
     //-----------------------------------------------------
 });

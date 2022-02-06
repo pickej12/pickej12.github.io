@@ -656,48 +656,42 @@ body {font-size:0.8rem;color:#333;}
     /*profile*/
     .profile {background:#eaeaea;}
     .profile .line span {position:absolute;z-index:999;}
-    .profile .line span:nth-child(1) {bottom:0;right:9.4%;width:1px;height:0;background:#ddd;transition:0.8s 0.5s;}
-    .profile .line span:nth-child(2) {top:118px;right:0;width:0;height:1px;background:#ddd;transition:0.8s 0.5s;}
+    .profile .line span:nth-child(1) {display:none;}
+    .profile .line span:nth-child(2) {display:none;}
 
-    .profile.on .line span:nth-child(1) {bottom:0;right:9.4%;width:1px;height:100%;background:#ddd;}
-    .profile.on .line span:nth-child(2) {top:118px;right:0;width:45%;height:1px;background:#ddd;}
-
-
-
-
-    .profile .container {width:60rem;margin:0 auto;display:flex;justify-content:space-between;}
-    .profile .left {flex:1;padding:0 15px;text-align:center;}
-    .profile .right {flex:1;padding:0 15px 0 6rem;}
+    .profile .container {width:auto;margin:0 auto;display:block;justify-content:center;}
+    .profile .left {padding:0 15px;text-align:left;border-bottom:1px solid #ccc;}
+    .profile .right {padding:0 15px;margin-top:0;}
 
 
-    .profile figure {position:relative;margin-bottom:2.5rem;}
-    .profile figure:after {position:absolute;top:1rem;left:36%;content:"";width:9.5rem;height:9.5rem;border-radius:50%;border:2px dashed #ccc;z-index:-1;}
+    .profile figure {position:relative;margin-bottom:2.5rem;display:none;}
+    .profile figure:after {position:absolute;top:1rem;left:36%;content:"";width:9.5rem;height:9.5rem;border-radius:50%;border:2px dashed #ccc;z-index:-1;display:none;}
 
 
-    .profile .left h3 {font-size:40px;font-weight:700;}
-    .profile .left span {position:relative;width:16rem;font-size:26px;font-weight:700;color:#111;}
+    .profile .left h3 {font-size:5vw;font-weight:700;}
+    .profile .left span {position:relative;width:300px;font-size:5vw;font-weight:700;color:#111;}
     .profile .left span:after {position:absolute;top:60%;left:-10px;display:block;content:"";width:105%;height:0.8rem;background:rgba(50, 170, 30, 0.8);border-radius:10px;z-index:-1;}
-    .profile .left strong {display:block;font-size:1rem;font-weight:700;margin:1.2rem 0 2.2rem;}
-    .profile .left p {font-size:15px;font-weight:500;color:#111;margin-right:12px;}
-    .profile dl {display:flex;flex-wrap:wrap;width:12rem;line-height:1.8;margin:0 auto;text-align:left;}
-    .profile dl dt {width:30%;font-size:17px;font-weight:700;}
-    .profile dl dd {width:70%;color:#555;font-weight:500;font-size:15px;padding-left:1rem;}
-    .profile dl:last-of-type {margin-bottom:4rem;}
+    .profile .left strong {display:block;font-size:4vw;font-weight:700;margin:2.5vh 0 3vh;}
+    .profile .left p {display:none;}
+    .profile dl {display:flex;flex-wrap:wrap;width:100%;line-height:1.8;margin:0 auto;text-align:left;}
+    .profile dl dt {width:20%;font-size:3.5vw;font-weight:700;}
+    .profile dl dd {width:80%;color:#555;font-weight:500;font-size:3.2vw;padding-left:0;}
+    .profile dl:last-of-type {margin-bottom:2vh;}
 
-    .profile .right strong {font-size:17px;font-weight:700;} 
-    .profile .right strong:after {display:block;content:"";width:37px;height:1.5px;background:#666;margin:12px 0 22px;} 
-    .profile .right span {font-size:14px;color:#666;}
-    .profile .right em {display:block;margin:13px 0 15px;color:#444;font-size:16px;font-weight:500;line-height:1.5;}
-    .profile .edu {margin:1.5rem 0 2.5rem;}
-    .profile .spec {margin-bottom:2.5rem;}
+    .profile .right strong {font-size:3.5vw;font-weight:700;} 
+    .profile .right strong:after {display:block;content:"";width:20px;height:1.5px;background:#666;margin:1vh 0 1.8vh;} 
+    .profile .right span {font-size:3vw;color:#666;}
+    .profile .right em {display:block;margin:1.5vh 0;color:#444;font-size:3vw;font-weight:500;line-height:1.3;}
+    .profile .edu {margin:3vh 0 0;}
+    .profile .spec {margin-bottom:0;}
 
-    .profile .spec {font-size:1.25rem;}
-    .profile .spec i {padding:8px;background:#444;color:#fff;margin:0 0.25rem;border-radius:50%;}
-    .profile .spec i:nth-of-type(8) {width:50px;height:30px;padding:0px 7px 6px;}
-    .profile .spec i img {width:28px;}
+    .profile .spec {font-size:4vw;}
+    .profile .spec i {padding:1.5vw;background:#444;color:#fff;margin:0 1vw 0 0;border-radius:50%;}
+    .profile .spec i:nth-of-type(8) {display:none;}
+    .profile .spec i img {width:23px;}
 
 
-    .profile .right_wrap {display:flex;}
+    .profile .right_wrap {display:none;}
     .profile .award {margin-right:5rem;}
     .profile .award em {margin-bottom:1.7rem;}
 
