@@ -375,7 +375,7 @@ body {font-size:0.8rem;color:#333;}
 @media (max-width:768px){
     #cursor {display:none;}
 
-    #header h1 {position:absolute;top:20px;left:4%;color:#666;font-size:13px;font-weight:400;z-index:999;}
+    #header h1 {position:absolute;top:20px;left:4%;color:#666;font-size:13px;font-weight:500;z-index:999;}
 
     #header nav {position:fixed;top:50%;right:4%;transform:translateY(-50%);z-index:999;}
 
