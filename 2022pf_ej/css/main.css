@@ -687,8 +687,8 @@ body {font-size:0.8rem;color:#333;}
 
     .profile .spec {font-size:4vw;}
     .profile .spec i {padding:1.5vw;background:#444;color:#fff;margin:0 1vw 0 0;border-radius:50%;}
-    .profile .spec i:nth-of-type(8) {display:none;}
-    .profile .spec i img {width:23px;}
+    .profile .spec i:nth-of-type(8) {padding:0.6vw 1.3vw 0.7vw;}
+    .profile .spec i img {width:4.5vw;transform:translateY(-2.5px)}
 
 
     .profile .right_wrap {display:none;}
