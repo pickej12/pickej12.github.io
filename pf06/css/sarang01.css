@@ -388,7 +388,7 @@ address {font-size:13px;margin-top:15px;font-weight:300;}
     .con01 .item03 a:nth-of-type(2):hover strong {margin-top:15px;}
 
     /*04*/
-    .con01 .item04 {grid-row-start:3;grid-row-end:4;grid-column-start:1;grid-column-end:2;background:#fdf3f4;;padding-top:30px;box-shadow:5px 5px 10px -6px #ccc;}
+    .con01 .item04 {grid-row-start:3;grid-row-end:4;grid-column-start:1;grid-column-end:2;background:#fdf3f4;padding-top:30px;box-shadow:5px 5px 10px -6px #ccc;overflow:hidden;}
     .con01 .item04 .num {margin-top:35px;}
     .con01 .item04 .num strong {display:block;font-size:3.7vw;font-weight:500;margin-bottom:18px;color:#333;}
     .con01 .item04 .num:nth-child(1) strong {display:block;font-size:3.8vw;font-weight:500;margin-bottom:18px;color:#97123d;}
@@ -483,7 +483,7 @@ address {font-size:13px;margin-top:15px;font-weight:300;}
     .con04 .container {width:auto;margin:0 auto;padding:0 20px;display:block;justify-content:center;}
 
     .con04 .left {width:auto;}
-    .con04 .left img {max-width:100%;}
+    .con04 .left img {max-width:100%;margin:0 auto;}
     .con04 .slick-dots {display:flex;margin-top:38px;justify-content:center;}
     .con04 .slick-dots li {width:8px;height:12px;background:#ddd;transition:0.3s;margin:0 5px;}
     .con04 .slick-dots li.slick-active {background:#97123d;transform:scale(1.15);}
