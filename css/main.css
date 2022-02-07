@@ -375,7 +375,7 @@ body {font-size:0.8rem;color:#333;}
 @media (max-width:768px){
     #cursor {display:none;}
 
-    #header h1 {position:absolute;top:20px;left:4%;color:#666;font-size:13px;font-weight:500;z-index:999;}
+    #header h1 {position:absolute;top:24px;left:4%;color:#666;font-size:13px;font-weight:500;z-index:999;}
 
     #header nav {position:fixed;top:50%;right:4%;transform:translateY(-50%);z-index:999;}
 
@@ -453,7 +453,7 @@ body {font-size:0.8rem;color:#333;}
     .section .mockup {background:url(../img/mac11.png) no-repeat center top/100%;padding:7.4% 12% 8% 12%;display:block;}
     .container {position:relative;display:grid;grid-template-columns:repeat(1,2fr);gap:0;align-items:center;width:auto;margin:0 auto;z-index:888;}
     .section .mockup figure {position:relative;padding-bottom:59.5%;overflow:hidden;border-radius:2px;}
-    .section .mockup figure img {position:absolute;top:0;left:0;width:100%;transition:7s 1s;cursor:pointer;}
+    .section .mockup figure img {position:absolute;top:0;left:0;width:100%;transition:7s 2s;cursor:pointer;}
     .section.on .mockup figure img {transform:translateY(-100%);top:100%;}
     .section .mockup figure:hover img {transform:translateY(-100%);top:100%;}
 
