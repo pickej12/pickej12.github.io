@@ -356,7 +356,7 @@ address {font-size:13px;margin-top:15px;font-weight:300;}
     .con01 {padding:50px 0;text-align:center;background:url(../img/con01_bg.jpg) no-repeat center left/cover;overflow:hidden;}
 
     .con01 .wrapper {width:auto;margin:0 auto;padding:0 20px;display:grid;grid-row-gap:18px;grid-template-columns:85%;grid-template-rows: 170px 306px 440px 240px 623px;justify-content:center;opacity:0;transform:translateY(1000px);transition:0.3s;}
-    .con01.on .wrapper {opacity:1;transform:translateY(0);transition:0.3s;}
+    .con01 .wrapper {opacity:1;transform:translateY(0);transition:0.3s;}
     /*01*/    
     .con01 .item01 {position:relative;grid-column-start:1;grid-column-end:2;background:#fff;border:5px solid #ddd;padding-top:43px;cursor:pointer;}    
     .con01 .item01 strong {display:block;font-size:4vw;font-weight:500;color:#333;margin-bottom:17px;}    
