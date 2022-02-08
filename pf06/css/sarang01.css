@@ -93,13 +93,13 @@
 .con01 .item01:hover:after {opacity:1;width:100%;height:100%;}
 /*02*/
 .con01 .item02 {grid-row-start:2;grid-row-end: 3;background:#97123d;color:#fff;padding-top:50px;box-shadow:5px 5px 10px -6px #bbb;transform:translateX(-1000px);transition:0.3s 0.8s;border-radius:10px;}
-.con01.on .item02 {transform:translateX(0);transition:0.3s;}
+.con01 .item02 {transform:translateX(0);transition:0.3s;}
 .con01 .item02 strong {display:block;font-size:21px;margin-bottom:15px;}
 .con01 .item02 span {line-height:22px;font-size:15px;font-weight:300;margin-bottom:28px;color:#ddd;}
 .con01 .item02 select {color:#333;margin-top:25px;width:255px;border:none;background:#fff;text-align:left;font-weight:700;font-size:15px;padding:7px 0 7px 15px;border-radius:5px;}
 /*03*/
 .con01 .item03 {grid-row-start:3;grid-row-end: 4;grid-column-start:1;grid-column-end:3;background:#fff;border:1px solid #97123d;box-shadow:5px 5px 10px -6px #999;padding-top:38px;display:flex;justify-content:center;color:#333;transform:translateY(1000px);transition:1.2s 1.2s;border-radius:10px;}
-.con01.on .item03 {grid-row-start:3;grid-row-end: 4;grid-column-start:1;grid-column-end:3;background:#fff;border:1px solid #97123d;box-shadow:5px 5px 10px -6px #bbb;padding-top:38px;display:flex;justify-content:center;color:#333;transform:translateY(0);transition:0.3s;}
+.con01 .item03 {grid-row-start:3;grid-row-end: 4;grid-column-start:1;grid-column-end:3;background:#fff;border:1px solid #97123d;box-shadow:5px 5px 10px -6px #bbb;padding-top:38px;display:flex;justify-content:center;color:#333;transform:translateY(0);transition:0.3s;}
 .con01 .item03 figure {text-align:center;margin:0 40px;}
 .con01 .item03 img {max-width:80%;transition:0.3s;opacity:0.9;}
 .con01 .item03 strong {display:block;margin-top:15px;font-weight:500;transition:0.3s;}
@@ -112,7 +112,7 @@
 .con01 .item03 a:nth-of-type(2):hover strong {margin-top:7px;}
 /*04*/
 .con01 .item04 {grid-row-start:1;grid-row-end: 3;grid-column-start:2;grid-column-end:3;background:#fdf3f4;padding-top:15px;box-shadow:5px 5px 10px -6px #bbb;transform:translateY(-1000px);transition:0.3s;opacity:0;border-radius:10px;}
-.con01.on .item04 {transform:translateY(0);transition:0.3s;opacity:1;}
+.con01 .item04 {transform:translateY(0);transition:0.3s;opacity:1;}
 .con01 .item04 .num {margin-top:35px;}
 .con01 .item04 .num strong {display:block;font-size:18px;font-weight:500;margin-bottom:18px;color:#333;}
 .con01 .item04 .num:nth-child(1) strong {display:block;font-size:19px;font-weight:500;margin-bottom:18px;color:#97123d;}
@@ -124,7 +124,7 @@
 .con01 .item04 dd {width:68%;font-size:23px;font-weight:700;line-height:35px;}
 /*05*/
 .con01 .item05 {grid-row-start:1;grid-row-end: 4;grid-column-start:3;grid-column-end:4;background:rgba(236, 222, 222, 0.7);padding-top:54px;box-shadow:5px 5px 10px -6px #bbb;opacity:0;transition:5s;border-radius:10px;}
-.con01.on .item05 {opacity:1;transition:0.3s;}
+.con01 .item05 {opacity:1;transition:0.3s;}
 .con01 .item05 strong {display:block;font-size:22px;font-weight:500;margin-bottom:20px;color:#111;}
 .con01 .item05 span {line-height:24px;font-weight:500;color:#555;font-size:15px;}
 .con01 .item05 .sub {margin:40px auto 0;;color:#555;}
