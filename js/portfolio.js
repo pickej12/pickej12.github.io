@@ -5,7 +5,7 @@ $(function(){
     let sideBar=$('nav li');
     $('#main').fullpage({
         
-        anchors:['intro', 'portfolio_01', 'portfolio_02', 'portfolio_03', 'portfolio_04', 'profile'],
+        anchors:['intro', 'portfolio_01', 'portfolio_02', 'portfolio_03', 'portfolio_04', 'design_work', 'profile'],
         afterLoad:function(origin, destination, direction){
             let idx=destination.index;
             sc.eq(idx).addClass('on').siblings().removeClass('on');
@@ -69,28 +69,6 @@ $(function(){
         loop:true,
         backSpeed:40,
     });
-
-
-
-    // var Rsd = $('.trnWrap');
-
-	// var slickOptions = {
-	// 	infinite:true,
-	// 	slidesToShow:1,
-	// 	slidesToScroll:1,
-	// 	autoplay:true,
-	// 	autoplaySpeed:2000,
-	// 	dots:true,
-	// 	arrows:false,
-	// };
-
-    // $(window).on('load resize', function() {
-    //     	if($(window).width() > 768) {
-    //     		Rsd.slick('unslick');
-    //     	}else{
-    //     		Rsd.not('.slick-initialized').slick(slickOptions);
-    //     	}
-    // });
 
     //-----------------------------------------------------
 });
