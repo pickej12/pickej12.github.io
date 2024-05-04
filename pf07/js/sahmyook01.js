@@ -2,11 +2,12 @@ $(function(){
 //-------------------------------------------------------------------------------
 $('#main').fullpage({
     responsiveWidth:769,
+    //769이하 풀페이지 깨기
     anchors:['c01','c02','c03','c04','footer'],
     afterLoad:function(origin, destination, direction){
-        let txt = $('.navbar>li').eq(destination.index).find('a').text();
+        // let txt = $('.navbar>li').eq(destination.index).find('a').text();
         $('.section').eq(destination.index).addClass("on").siblings().removeClass('on');
-        $('.navbar>li').eq(destination.index).addClass("on").siblings().removeClass('on');
+        // $('.navbar>li').eq(destination.index).addClass("on").siblings().removeClass('on');
         if(!$('nav').hasClass('on')) {
             destination.index===0 ? $('.header').fadeIn() : $('.header').slideUp();
         }
@@ -26,7 +27,7 @@ $(".con02Wrap .schedule .content ul").on("mousewheel scroll",function(e){
 $('.main_slider').slick({
     arrows:false,
     autoplay:true,
-    autoplaySpeed:3000,
+    autoplaySpeed:5000,
     pauseOnHover:false,
     dots:true,
 });
@@ -89,7 +90,7 @@ $('.con03Content .con03_03 .btn i.xi-angle-right').on('click',function(){
 
 
 $('#mv01').YTPlayer({
-    videoURL:'https://youtu.be/0I4YYHKJ2N0',
+    videoURL:'https://youtu.be/DaVkE5l70BQ',
     containment:'self',
     autoPlay:true,
     mute:true,
@@ -100,7 +101,7 @@ $('#mv01').YTPlayer({
     optimizeDisplay:false,
 });
 
-$('.con04 i.xi-tv').on('click', function(){
+$('.su_video').on('click', function(){
     $('#mv01').YTPFullscreen();
 });
 
@@ -157,7 +158,8 @@ $(window).on('resize', function(){
 
 
 $('.toTop').on('click',function(){
-    $('html, body').animate({scrollTop:0},500)
+    $('html, body').animate({scrollTop:0},1000)
+    // ({scrollTop:도달위치},속도)
 });
 
 $(window).on('scroll',function(){
