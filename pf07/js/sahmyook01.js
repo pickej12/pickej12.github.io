@@ -19,6 +19,10 @@ $('#main').fullpage({
     
 });
 
+$(".right_pop ul").on("mousewheel scroll",function(e){
+    e.stopPropagation();
+}); 
+
 $(".con02Wrap .schedule .content ul").on("mousewheel scroll",function(e){
     e.stopPropagation();
 }); 
@@ -47,6 +51,10 @@ $('.tab_menu>ul>li').on('click',function(){
 });
 
 
+$('.right_pop').on('click', function(){
+    $(this).toggleClass('on');
+    $('.right_pop ul').toggleClass('on');
+});
 
 
 $('.popUp figure').slick({
