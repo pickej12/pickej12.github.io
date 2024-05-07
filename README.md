@@ -1,3 +1,5 @@
-개인 연습.
-연동 테스트!
-계정 변동 확인
+index-개인 포트폴리오 
+( https://pickej12.github.io )
+
+document- training asset
+( https://pickej12.github.io/document.html )
