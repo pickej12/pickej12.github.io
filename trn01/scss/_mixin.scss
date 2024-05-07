@@ -1,0 +1,28 @@
+@mixin moblie{
+    @media (max-width:768px){
+        @content
+    };
+}
+
+@mixin moblie-tablet{
+    @media (max-width:1024px){
+        @content
+    };
+}
+
+@mixin pseudo {
+    content:"";display:block;
+}
+
+@mixin section-title {
+    h2 {
+        font-size:0.7rem;
+        margin-bottom:0.25em;
+    }
+    p {
+        font-size:2rem;
+        font-family:$point-text;
+        color:$c-point;
+        margin-bottom:1.5rem;
+    }
+}

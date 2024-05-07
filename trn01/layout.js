@@ -1,11 +1,11 @@
 $(function(){
-
+    
+//----------------------------------------------------------------
 $('.mopen').on('click', function(){
     $('nav').toggleClass('on')
     $('.header .right').toggleClass('on')
 });
 
-//----------------------------------------------------------------
 $(window).on("scroll",function(){
     var sct=$(window).scrollTop(); //var let const
     sct > 0 ? $('.header').addClass('on') : $('.header').removeClass('on'); //삼항조건식
