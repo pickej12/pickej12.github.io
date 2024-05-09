@@ -31,7 +31,7 @@ $(".con02Wrap .schedule .content ul").on("mousewheel scroll",function(e){
 $('.main_slider').slick({
     arrows:false,
     autoplay:true,
-    autoplaySpeed:5000,
+    autoplaySpeed:3000,
     pauseOnHover:false,
     dots:true,
 });
