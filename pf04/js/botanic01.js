@@ -42,7 +42,14 @@ $(function(){
     });
 
 
-    
+    //con03 ani 적용하기
+    // $(window).on('scroll', function(){
+    //     let sct=$(window).scrollTop();
+    //     $('.ani').each(function(){
+    //         let secTop = $(this).offset().top;
+    //         sct > secTop - 400 ? $(this).addClass('on') : $(this).removeClass('on'); 
+    //     });
+    // });
 
     
     $('#con04 .poster').slick({

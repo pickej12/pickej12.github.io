@@ -1,4 +1,4 @@
-/* * {outline:1px solid #f00;} */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap');
 
 /*header*/
 #header {color:#333;background:#fff;}
@@ -7,7 +7,7 @@
 #header .top {line-height:40px;border-bottom:1px solid #ddd;}
 #header .top img {width:80px;margin-top:-5px;}
 #header .top ul {display:flex;}
-#header .top ul>li>a {display:block;font-size:12px;font-weight:300;}
+#header .top ul>li>a {display:block;font-size:12px;font-weight:400;}
 #header .top ul>li~li>a:before {content:"";display:inline-block;width:1px;height:10px;background:#ddd;margin:0 21px;}
 
 #header .bottom {line-height:100px;}
@@ -16,8 +16,8 @@
 #header .bottom ul>li>a {margin:0 22px;font-weight:500;font-size:18px;}
 
 #header .right {display:flex;}
-#header .bottom .right strong {display:block;font-size:17px;line-height:100px;}
-#header .bottom .right i {margin-left:20px;font-size:26px;color:#000;line-height:100px;}
+#header .bottom .right strong {display:block;font-size:17px;line-height:100px;cursor: pointer;}
+#header .bottom .right i {margin-left:20px;font-size:26px;color:#000;line-height:100px;cursor: pointer;}
 
 #header .bottom ul>li:hover {color:#78b319;font-size:17px;}
 
@@ -26,24 +26,25 @@
 
 /*main_visual*/
 #main_visual {position:relative;letter-spacing:-0.025em;}
-#main_visual figure {background:url(../img/main_visual.jpg) no-repeat center center/cover;height:825px;}
-#main_visual .container {width:1200px;padding:225px 15px 0;margin:0 auto;color:#fff;letter-spacing:-0.025em;}
-#main_visual p {font-size:32px;font-weight:300;margin-bottom:25px;letter-spacing:-0.04em;}
-#main_visual h2 {position:relative;font-size:68px;font-weight:500;letter-spacing:0;font-family: 'Noto Serif KR', sans-serif;}
-/* #main_visual h2:after {position:absolute;bottom:-20px;left:-10px;display:block;content:"";width:55%;height:36px;background:#90be45;border-radius:10px 8px 22px 10px;} */
-#main_visual h2 i {font-size:48px;font-weight:500;letter-spacing:0;animation:bloom 2s forwards;}
-#main_visual h2 span {opacity:0;animation:bloom2 5s 2s forwards;}
+#main_visual figure {background:url(../img/main_visual.jpg) no-repeat center center/cover;height:calc(100vh - 150px);}
+#main_visual .container {width:1200px;padding:10% 15px 0;margin:0 auto;color:#fff;letter-spacing:-0.025em;}
+#main_visual p {font-size:32px;font-weight:300;margin-bottom:36px;letter-spacing:-0.04em;}
+#main_visual h2 {position:relative;font-size:72px;font-weight:500;letter-spacing:0;font-family: 'Noto Serif KR', sans-serif;}
+#main_visual h2 span {font-size:48px;font-weight:500;letter-spacing:0;animation:bloom 2s forwards;}
+#main_visual h2 strong {opacity:0;animation:bloom2 2s 2s forwards;}
 
 @keyframes bloom {
-    0% {transform:scale(0.2);opacity:0.3;}
-    60% {transform:scale(0.3);opacity:0.5;}
-    100% {transform:scale(1);opacity:1;}
+    0% {opacity:0.3;}
+    60% {opacity:0.5;}
+    100% {opacity:1;}
 }
 
 @keyframes bloom2 {
-    0% {transform:scale(0.2);opacity:0;}
-    60% {transform:scale(0.3);opacity:0.5;}
-    100% {transform:scale(1);opacity:1;}
+    0% {opacity:0;}
+    25% {opacity:0.3;}
+    50% {opacity:0.5;}
+    75% {opacity:0.8;}
+    100% {opacity:1;}
 }
 
 
@@ -57,8 +58,10 @@
 #main_visual .case h3:after {display:block;content:"";width:0;height:2px;background:#90be45;margin:18px auto 26px;transition:0.5s;}
 #main_visual .case strong {font-weight:300;font-size:0;}
 #main_visual .case em {display:block;margin:10px auto 20px;font-size:0;font-weight:500;}
+#main_visual .case a {display: block;width: 50%; padding: 10px 0 12px;border: 1px solid #ddd;margin:30px auto 0;border-radius:20px;}
+#main_visual .case a:hover {border:none;background:#4e813b;transition: 0.5s;}
 
-#main_visual .case:hover .bg {background:rgba(0, 0, 0, 0.8);width:370px;height:290px;text-align:center;}
+#main_visual .case:hover .bg {width:370px;height:290px;border-radius: 30% 0;}
 #main_visual .case:hover h3 {font-size:28px;font-weight:700;padding:60px 0 0;color:#90be45;}
 #main_visual .case:hover h3 i{font-size:32px;}
 #main_visual .case:hover h3 span{font-size:18px;font-weight:500;}
@@ -67,6 +70,10 @@
 #main_visual .case:hover em {display:block;margin:10px auto 20px;font-size:23px;font-weight:500;}
 
 
+
+
+/* popup */
+/* .popup {position:absolute; top:200px; right:10%; width:545px; height:380px; border:2.5px dashed #fff;} */
 
 
 
@@ -264,8 +271,8 @@ address {font-size:14px;font-weight:300;}
     #main_visual .container {width:100%;padding:16vh 0 0;margin:0 auto;color:#fff;letter-spacing:-0.025em;}
     #main_visual p {font-size:3.5vh;font-weight:300;margin-bottom:25px;letter-spacing:-0.04em;}
     #main_visual h2 {font-size:8vh;font-weight:500;letter-spacing:0;margin-bottom:25px;font-family: 'Noto Serif KR', sans-serif;text-shadow:0 0 2px #cecece;}
-    #main_visual h2 i {font-size:5vh;font-weight:500;letter-spacing:0;margin-bottom:25px;display:block;text-shadow:none;opacity:1;animation:none;}
-    #main_visual h2 span {opacity:1;animation:none;}
+    #main_visual h2 span {font-size:5vh;font-weight:500;letter-spacing:0;margin-bottom:25px;display:block;text-shadow:none;opacity:1;animation:none;}
+    #main_visual h2 strong {opacity:1;animation:none;}
 
     #main_visual .ex {display:block;position:absolute;bottom:0;width:100%;margin:0 auto;}
     #main_visual .ex li {flex:none;position:relative;}
