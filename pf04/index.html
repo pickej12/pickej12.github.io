@@ -12,10 +12,12 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/slick.css">
     <link rel="stylesheet" href="./css/aos.css">
-    <link rel="stylesheet" href="./css/botanic01.css">
+    <link rel="stylesheet" href="./css/jquery.mb.YTPlayer.min.css">
+    <link rel="stylesheet" href="./css/main.css">
     <script src="./js/jquery-1.12.4.min.js"></script>
     <script src="./js/slick.min.js"></script>
     <script src="./js/aos.js"></script>
+    <script src="./js/jquery.mb.YTPlayer.min.js"></script>
     <script src="./js/botanic01.js"></script>
 </head>
 <body>
@@ -51,8 +53,9 @@
                     </ul>
                 </nav>
                 <div class="right">
-                    <strong>ENG</strong>
-                    <i class="xi-bars"></i>
+                    <a href="#">
+                        <i class="xi-exchange"></i>ENG
+                    </a>
                 </div>
             </div>
         </div>
@@ -71,27 +74,26 @@
         <div class="visual">
         <figure>
             <div class="container">
-                <p>도심 속의 녹색명소</p>
+                <p class="sub-title">도심 속의 녹색명소</p>
                 <h2><span>피어나다,</span> <strong>서울 식물원</strong></h2>
                 <ul class="ex">
                     <li>
                         <div class="case">
                             <div class="bg">
                                 <h3><i class="xi-alarm-o"></i> 관람시간 <span>&nbsp;입장 마감 17:30</span></h3>
-                                <strong>주제원 (주제정원. 온실)</strong>
-                                <em>09:30 - 18:00 ( 월요일 휴관 )</em>
-                                <strong>열린 숲. 호수원. 습지원</strong>
-                                <em>연중무휴</em>
+                                <p>주제원 (주제정원. 온실)</p>
+                                <strong>09:30 - 18:00 ( 월요일 휴관 )</strong>
+                                <p>열린 숲. 호수원. 습지원</p>
+                                <strong>연중무휴</strong>
                             </div>
                         </div>
-
                     </li>
                     <li>
                         <div class="case">
                             <div class="bg">
                                 <h3><i class="xi-users-o"></i> 온라인 예매<span> &nbsp;매표 마감 17:00</span></h3>
-                                <strong>개인.대인 &nbsp;/&nbsp; 청소년 &nbsp;/&nbsp; 소인</strong>
-                                <em>5,000원 . 3,000원 . 2,000원</em>
+                                <p>개인.대인 &nbsp;/&nbsp; 청소년 &nbsp;/&nbsp; 소인</p>
+                                <strong>5,000원 . 3,000원 . 2,000원</strong>
                                 <a href="#!"> 예매하기 > </a>
                             </div>
                         </div>
@@ -101,10 +103,10 @@
                         <div class="case">
                             <div class="bg">
                                 <h3><i class="xi-error-o"></i> 식물원 이용 <span>&nbsp;TIP</span></h3>
-                                <strong>제로페이 사용시</strong>
-                                <em>입장료 30% 할인</em>
-                                <strong>모든 전시관에서</strong>
-                                <em>오디오 가이드 제공</em>
+                                <p>제로페이 사용시</p>
+                                <strong>입장료 30% 할인</strong>
+                                <p>모든 전시관에서</p>
+                                <strong>오디오 가이드 제공</strong>
                             </div> 
                         </div>
                     </li>
@@ -114,203 +116,193 @@
         </div>
     </section>
 
-    <!-- <div class="popup">
-        <h3>POPUP 안내</h3>
-        <img src="./img/popup.png" alt="main-popup-img">
-        <i class="xi-close"></i>
-    </div> -->
-
-
-
-    <section id="con01">
-        <div class="container">
-            <div class="left">
-                <i class="xi-volume-up"></i>알립니다
+    <div class="popup">
+        <div class="position">
+            <div class="close_btn">
+                <label><input type="checkbox" class="today_chk">오늘 하루 보지 않기</label>
+                <a href="#" class="close"><i class="xi-close"></i></a>
             </div>
-            <div>
+            <h3>전시 안내</h3>
+            <img src="./img/popup.jpg" alt="main-popup-img">
+            <a href="#!" class="move_btn">예매하기 ></a>
+        </div>
+    </div>
+
+    
+    <div class="con01-02">
+        <section id="con01">
+            <div class="container">
+                <a href="#!" class="left">
+                    공지사항 > 
+                </a>
+                <div>
+                    <div class="slider">
+                        <a href="#">
+                            <strong>공지</strong>
+                            <span>2024.04.01(월) 정상운영/ *04.02(화) 휴관 안내</span>
+                            <em>2024.04.01</em>
+                        </a>
+                        <a href="#">
+                            <strong>행사</strong>
+                            <span>현장 제로페이 결제 시 주제원 입장료 30% 할인</span>
+                            <em>2024.03.20</em>
+                        </a>
+                        <a href="#">
+                            <strong>공지</strong>
+                            <span>방침에 따라 마스크 미 착용 고객 입장 불가</span>
+                            <em>2024.02.08</em>
+                        </a>
+                    </div>
+                </div>
+            
+                <div class="btn">
+                    <i class="xi-angle-up"></i>
+                    <i class="xi-angle-down"></i>
+                </div>
+            </div>
+        </section>
+    
+    
+    
+        <section id="con02">
+            <h2>WELCOME BOTANIC PARK</h2>
+            <p>서울식물원이 곧 녹색도시 서울의 미래입니다</p>
+            <ul class="tab">
+                <li class="on">주제원</li>
+                <li>열린숲</li>
+                <li>호수원</li>
+                <li>습지원</li>
+            </ul>
+            <div class="slider_wrap">
                 <div class="slider">
-                    <a href="#">
-                        <strong>공지</strong>
-                        <span>2024.04.01(월) 정상운영/ *04.02(화) 휴관 안내</span>
-                        <em>2024.04.01</em>
-                    </a>
-                    <a href="#">
-                        <strong>행사</strong>
-                        <span>현장 제로페이 결제 시 주제원 입장료 30% 할인</span>
-                        <em>2024.03.20</em>
-                    </a>
-                    <a href="#">
-                        <strong>공지</strong>
-                        <span>방침에 따라 마스크 미 착용 고객 입장 불가</span>
-                        <em>2024.02.08</em>
-                    </a>
+                    <div class="container">
+                        <figure>
+                            <img src="./img/con02_left02.jpg" alt="주제원">
+                            <img src="./img/con02_left002.jpg" alt="열린숲">
+                            <img src="./img/con02_left03.jpg" alt="호수원">
+                            <img src="./img/con02_left11.jpg" alt="습지원">
+                        </figure>
+                        <figure>
+                            <a href="#">
+                                <strong>주제원</strong>
+                                <span>01 &nbsp;주제 정원<br>02 &nbsp;온실<br>03 &nbsp;마곡 문화관<br>04 &nbsp;식물문화센터</span>
+                            </a>
+                            <a href="#">
+                                <strong>열린숲</strong>
+                                <span>01 &nbsp;방문자 센터<br>02 &nbsp;진입 광장<br>03 &nbsp;숲 문화원<br>04 &nbsp;잔디 마당</span>
+                            </a>
+                            <a href="#">
+                                <strong>호수원</strong>
+                                <span>01 &nbsp;수변 가로<br>02 &nbsp;물가 쉼터<br>03 &nbsp;습지 관찰테크<br>04 &nbsp;호수 횡단 보행교</span>
+                            </a>
+                            <a href="#">
+                                <strong>습지원</strong>
+                                <span>01 &nbsp;한강 전망 데크<br>02 &nbsp;한강 나들목<br>03 &nbsp;유수<br>04 &nbsp;저류지</span>
+                            </a>
+                        </figure>
+                        <figure>
+                            <img src="./img/con02_bottom06.jpg" alt="주제원">
+                            <img src="./img/con02_bottom01.jpg" alt="열린숲">
+                            <img src="./img/con02_bottom03.jpg" alt="호수원">
+                            <img src="./img/con02_bottom04.jpg" alt="습지원">
+                        </figure>
+                    </div>
                 </div>
+                <a href="#!">식물원 둘러보기 ></a>
             </div>
-        
-            <div class="btn">
-                <i class="xi-angle-up"></i>
-                <i class="xi-angle-down"></i>
-            </div>
-        </div>
-    </section>
-
-
-
-    <section id="con02">
-        <h2>WELCOME BOTANIC PARK</h2>
-        <p>서울식물원이 곧 녹색도시 서울의 미래입니다</p>
-        <ul class="tab">
-            <li class="on">주제원</li>
-            <li>열린숲</li>
-            <li>호수원</li>
-            <li>습지원</li>
-        </ul>
-        <div class="slider_wrap">
-            <div class="slider">
-                <div class="container">
-                    <figure>
-                        <img src="./img/con02_left02.jpg" alt="주제원">
-                        <img src="./img/con02_left002.jpg" alt="열린숲">
-                        <img src="./img/con02_left03.jpg" alt="호수원">
-                        <img src="./img/con02_left11.jpg" alt="습지원">
-                    </figure>
-                    <figure>
-                        <a href="#">
-                            <strong>주제원</strong>
-                            <span>01 &nbsp;주제 정원<br>02 &nbsp;온실<br>03 &nbsp;마곡 문화관<br>04 &nbsp;식물문화센터</span>
-                        </a>
-                        <a href="#">
-                            <strong>열린숲</strong>
-                            <span>01 &nbsp;방문자 센터<br>02 &nbsp;진입 광장<br>03 &nbsp;숲 문화원<br>04 &nbsp;잔디 마당</span>
-                        </a>
-                        <a href="#">
-                            <strong>호수원</strong>
-                            <span>01 &nbsp;수변 가로<br>02 &nbsp;물가 쉼터<br>03 &nbsp;습지 관찰테크<br>04 &nbsp;호수 횡단 보행교</span>
-                        </a>
-                        <a href="#">
-                            <strong>습지원</strong>
-                            <span>01 &nbsp;한강 전망 데크<br>02 &nbsp;한강 나들목<br>03 &nbsp;유수<br>04 &nbsp;저류지</span>
-                        </a>
-                    </figure>
-                    <figure>
-                        <img src="./img/con02_bottom06.jpg" alt="주제원">
-                        <img src="./img/con02_bottom01.jpg" alt="열린숲">
-                        <img src="./img/con02_bottom03.jpg" alt="호수원">
-                        <img src="./img/con02_bottom04.jpg" alt="습지원">
-                    </figure>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
+    </div>
 
 
 
     <section id="con03">
-        <div class="container">
-            <h2 data-aos="fade-up" data-aos-delay="800" data-aos-offset="100">‘ 피어나다 ’</h2>
-            <p data-aos="fade-up" data-aos-duration="600" data-aos-offset="100">식물의 생명이 열리는 순간의 모습처럼 시민참여로 만들어지는 가드닝 문화/ 사회/ 교육의 소통이 피어나는 공간</p>
-            <strong data-aos="fade-up" data-aos-duration="1300" data-aos-offset="100">즐거운 배움을 통해 식물문화의 중요성을 깨닫고 생물 다양성을 보전하는 지혜로운 미래시민을 양성합니다</strong>
-            <div class="btn" data-aos="fade-up" data-aos-delay="1100" data-aos-offset="100">
-                <a href="#!"><i class="xi-file-download"></i> 서울식물원 책자 (국문)</a>
-                <a href="#!"><i class="xi-file-download"></i> 서울식물원 책자 (ENG)</a>
-            </div>
+        <h2 data-aos="fade-up" data-aos-delay="800" data-aos-offset="100">‘ 피어나다 ’</h2>
+        <p data-aos="fade-up" data-aos-duration="600" data-aos-offset="100">식물의 생명이 열리는 순간의 모습처럼 시민참여로 만들어지는 가드닝 문화/ 사회/ 교육의 소통이 피어나는 공간</p>
+        <span data-aos="fade-up" data-aos-duration="1300" data-aos-offset="100">즐거운 배움을 통해 식물문화의 중요성을 깨닫고 생물 다양성을 보전하는 지혜로운 미래시민을 양성합니다</span>
+        <div class="btn" data-aos="fade-up" data-aos-delay="1100" data-aos-offset="100">
+            <a href="#!"><i class="xi-file-download"></i> 서울식물원 책자 (국문)</a>
+            <a href="#!"><i class="xi-file-download"></i> 서울식물원 책자 (ENG)</a>
         </div>
+        <a href="#!">푸른수목원 자료실 ></a>
     </section>
 
 
 
-    <section id="con04">
-        <div class="exhibition">
-            <h2>Exhibitions</h2>
-        </div>
-        <div class="container">
-            <div class="left">
-                <a href="#"><h3>이달의 전시</h3></a>
-                <p>다양한 형태의 식물 ,<br>만나보실 준비 되셨나요?</p>
-                <strong>서울 식물원 곳곳에서 느껴보세요 !</strong>
+    <div class="con04_bg">
+        <section id="con04">
+            <div class="container">
+                <h2>Exhibitions</h2>
+                <div class="content_wrap">
+                    <div class="left">
+                        <a href="#"><h3>이달의 전시</h3></a>
+                        <p>다양한 형태의 식물 ,<br>만나보실 준비 되셨나요?</p>
+                        <span>서울 식물원 곳곳에서 느껴보세요 !</span>
+                        <div class="btn">
+                            <i class="xi-angle-left"></i>
+                            <i class="xi-angle-right"></i>
+                        </div>
+                    </div>
+                    <div class="poster">
+                        <figure>
+                            <img src="./img/con04_01.jpg" alt="전시포스터">
+                            <a href="#">
+                                <strong>식물학자 씨앗, 발견하다</strong>
+                                <span>씨앗도서관</span>
+                                <em>(식물문화센터 1층)<br>2024.03.12 - 2024.03.30</em>
+                            </a>
+                        </figure>
+                        <figure>
+                            <img src="./img/con04_02.jpg" alt="전시포스터">
+                            <a href="#">
+                                <strong>피어나다, Come Into Bloom</strong>
+                                <span>주제원</span>
+                                <em>(식물원 로비 1층)<br>2024.03.30 - 2024.04.12</em>
+                            </a>
+                        </figure>
+                        <figure>
+                            <img src="./img/con04_03.jpg" alt="전시포스터">
+                            <a href="#">
+                                <strong>숲의 이면</strong>
+                                <span>마곡문화관</span>
+                                <em>(식물원 로비 1층)<br>2024.03.12 - 2024.03.22</em>
+                            </a>
+                        </figure>
+                        <figure>
+                            <img src="./img/con04_04.jpg" alt="전시포스터">
+                            <a href="#">
+                                <strong>서울식물원 탄생기록</strong>
+                                <span>프로젝트홀2</span>
+                                <em>(식물문화센터 2층)<br>2024.04.05 - 2024.04.14</em>
+                            </a>
+                        </figure>
+                        <figure>
+                            <img src="./img/con04_05.jpg" alt="전시포스터">
+                            <a href="#">
+                                <strong>정정엽 : 조용한 소란</strong>
+                                <span>마곡문화관</span>
+                                <em>(식물문화센터 2층)<br>2024.04.20 - 2024.05.24</em>
+                            </a>
+                        </figure>
+                    </div>
+                </div>
+                <a href="#!">전시 예매하기 ></a>
             </div>
-            <div class="poster">
-                <figure>
-                    <img src="./img/con04_01.jpg" alt="전시포스터">
-                    <a href="#">
-                        <strong>식물학자 씨앗, 발견하다</strong>
-                        <span>씨앗도서관</span>
-                        <em>(식물문화센터 1층)<br>2024.03.12 - 2024.03.30</em>
-                    </a>
-                </figure>
-                <figure>
-                    <img src="./img/con04_02.jpg" alt="전시포스터">
-                    <a href="#">
-                        <strong>피어나다, Come Into Bloom</strong>
-                        <span>주제원</span>
-                        <em>(식물원 로비 1층)<br>2024.03.30 - 2024.04.12</em>
-                    </a>
-                </figure>
-                <figure>
-                    <img src="./img/con04_03.jpg" alt="전시포스터">
-                    <a href="#">
-                        <strong>숲의 이면</strong>
-                        <span>마곡문화관</span>
-                        <em>(식물원 로비 1층)<br>2024.03.12 - 2024.03.22</em>
-                    </a>
-                </figure>
-                <figure>
-                    <img src="./img/con04_04.jpg" alt="전시포스터">
-                    <a href="#">
-                        <strong>서울식물원 탄생기록</strong>
-                        <span>프로젝트홀2</span>
-                        <em>(식물문화센터 2층)<br>2024.04.05 - 2024.04.14</em>
-                    </a>
-                </figure>
-                <figure>
-                    <img src="./img/con04_05.jpg" alt="전시포스터">
-                    <a href="#">
-                        <strong>정정엽 : 조용한 소란</strong>
-                        <span>마곡문화관</span>
-                        <em>(식물문화센터 2층)<br>2024.04.20 - 2024.05.24</em>
-                    </a>
-                </figure>
-            </div>
-            <div class="btn">
-                <i class="xi-arrow-right"></i>
-            </div>
-            <div class="white">
-                <span></span>
-            </div>
-        </div>
-    </section>
+        </section>
+    </div>
 
 
 
     <section id="con05">
         <div class="container">
             <div class="left">
-                <p>International Symposium</p>
-                <a href="#">
-                    <h2>Green Mask,</h2>
-                    <strong>2021 서울식물원 국제심포지엄</strong>
-                </a>
-                <span>session01 ,</span>
-                <em>Roles and Challenges of Botanic Garden in the City<br>도시식물원의 역할과 과제</em>
-                <dl>
-                    <dt>기 간 </dt>
-                    <dd>2021. 10. 5.(화)</dd>
-                    <dt>장 소 </dt>
-                    <dd>서울식물원 전시온실</dd>
-                    <dt>시 간</dt>
-                    <dd>10:00~12:00</dd>
-                    <dt>관람료</dt>
-                    <dd>무료</dd>
-                </dl>
-                <div class="btn">
-                    <a href="#"><i class="xi-file-download"></i> 초록집 다운로드</a>
-                    <a href="#"><i class="xi-user-plus"></i> 현장관람 등록</a>
-                </div>
+                <figure>
+                    <div class="park_video">
+                        <div id="video01"></div>
+                    </div>
+                </figure>
             </div>
             <div class="right">
-                <figure>
-                    <a href="#"><img src="./img/con05_poster.jpg" alt="심포지엄 포스터"></a>
-                </figure>
+               <a href="#!">식물원 사계 ></a>
             </div>
         </div>
     </section>
@@ -322,7 +314,7 @@
             <div class="left">
                 <div class="footer_nb">
                     <dl>
-                        <dt><a href="#">사이트이용공고</a></dt>
+                        <dt><a href="#">사이트 이용공고</a></dt>
                         <dd><a href="#">이용약관</a></dd>
                         <dd><a href="#">전자민원</a></dd>
                         <dd><a href="#">공공데이터</a></dd>
@@ -331,18 +323,18 @@
                     </dl>
                     <dl>
                         <dt><a href="#">자료 다운로드</a></dt>
-                        <dd><a href="#">가이드 맵</a></dd>
+                        <dd><a href="#">가이드맵</a></dd>
                         <dd><a href="#">보존 식물</a></dd>
-                        <dd><a href="#">온라인 교육집</a></dd>
-                        <dd><a href="#">서울식물원 책자</a></dd>
-                        <dd><a href="#">심포지엄 초록집</a></dd>
+                        <dd><a href="#">온라인 교육</a></dd>
+                        <dd><a href="#">식물원 책자</a></dd>
+                        <dd><a href="#">심포지엄 책자</a></dd>
                     </dl>
                     <dl>
-                        <dt><a href="#">개인정보처리방침</a></dt>
+                        <dt><a href="#">개인정보 처리방침</a></dt>
                         <dd><a href="#">저작권 정보</a></dd>
                         <dd><a href="#">홈페이지 바로잡기</a></dd>
-                        <dd><a href="#">행정서비스현장</a></dd>
-                        <dd><a href="#">영상정보처리기기방침</a></dd>
+                        <dd><a href="#">행정 서비스 현장</a></dd>
+                        <dd><a href="#">영상정보 처리방침</a></dd>
                         <dd><a href="#">무단복제금지</a></dd>
                     </dl>
                 </div>
@@ -363,6 +355,32 @@
             </div>
         </div>
     </footer>
+
+    <div id="right_pop">
+        <div class="r_p_position">
+            <ul class="action-list">
+                <li>
+                    <a href="https://botanicpark.seoul.go.kr/front/ebook/06_SBP/index.html#page=1" target="_blank">
+                        <i class="xi-map"></i>
+                        안내지도
+                    </a>
+                </li>
+                <li>
+                    <a href="https://map.naver.com/p/search/%EC%84%9C%EC%9A%B8%EC%8B%9D%EB%AC%BC%EC%9B%90/place/1932878505?placePath=?entry=pll&from=nx&fromNxList=true&searchType=place&c=16.48,0,0,0,dh" target="_blank">
+                        <i class="xi-maker-drop"></i>
+                        오시는길
+                    </a>
+                </li>
+                <li>
+                    <a href="tel:02-2104-9716">
+                        <i class="xi-call"></i>
+                        문의전화
+                    </a>
+                </li>
+            </ul>
+            <i class="xi-plus"></i>
+        </div>
+    </div>
 
     <div id="toTop">
         <i class="xi-arrow-up"></i>
