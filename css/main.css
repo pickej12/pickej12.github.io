@@ -116,9 +116,13 @@ body {font-size:0.8rem;color:#333;}
 
 
 /*pf01*/
-.portfolio_01 {background:linear-gradient(#f2f2f2,#eee);}
-.portfolio_01 .mockup {transform:translateX(3rem) scale(1.25);opacity:0;margin-top:-30px;}
-.portfolio_01.on .mockup {transform:translateX(0) scale(1.2);opacity:1;transition:0.8s;}
+.portfolio_01 {background:url(../img/bg_pattern02.png);}
+.portfolio_01 .mockup {transform:translateX(10rem) scale(1.25);opacity:0;margin-top:-30px;}
+.portfolio_01.on .mockup {transform:translateX(4rem) scale(1.2);opacity:1;transition:0.8s;}
+
+.portfolio_01 .description {margin-left:8rem}
+.portfolio_01 .description h3 {margin-bottom:38px}
+.portfolio_01 .description strong {display:block;margin-top:21px;}
 .portfolio_01 .description p {color:#8e60bc;}
 
 .portfolio_01 .description dd span:nth-of-type(1) {background:#6e278f;}
@@ -129,7 +133,7 @@ body {font-size:0.8rem;color:#333;}
 .portfolio_01 .description ul a:hover {border:1px solid #6f42c1;color:#6e278f;;box-shadow: 3px 3px 5px rgb(0 0 0 / 30%);}
 
 .portfolio_01 .circle_sec {position:absolute;bottom:42px;right:-100%;z-index:1;}
-.portfolio_01 .circle_sec span {display:block;width:42rem;height:42rem;border-radius:50%;border:1.5px solid #cfc2dd;opacity:0.6;}
+.portfolio_01 .circle_sec span {display:block;width:42rem;height:42rem;border-radius:50%;border:1.5px solid #cfcfcf;opacity:0.6;}
 .portfolio_01.on .circle_sec {right:-1.5%;rotate:(1440deg);transition:1.5s;}
 
 
@@ -148,15 +152,15 @@ body {font-size:0.8rem;color:#333;}
 .portfolio_02 .description ul a:hover {border:1px solid #4e813b;color:#4e813b;box-shadow: 3px 3px 5px rgb(0 0 0 / 30%);}
 
 .portfolio_02 .circle_sec {position:absolute;bottom:28px;left:-50rem;z-index:1;}
-.portfolio_02 .circle_sec span {display:block;width:42rem;height:42rem;border-radius:50%;border:1.5px solid #d3fc92;opacity:0.7;}
-.portfolio_02.on .circle_sec {left:3.5%;transform:rotate(1440deg);transition:2s;}
+.portfolio_02 .circle_sec span {display:block;width:42rem;height:42rem;border-radius:50%;border:1.5px solid #cfcfcf;opacity:0.7;}
+.portfolio_02.on .circle_sec {left:-1.5%;transform:rotate(1440deg);transition:2s;}
 
 .portfolio_02 .mockup {transform:translate(0, -2rem) scale(1.25);margin-top:-30px;opacity: 0;}
 .portfolio_02.on .mockup {transform:translate(4rem, 0) scale(1.2);transition:0.8s;opacity: 1;}
 
 
 /*pf03*/
-.portfolio_03 {background:url(../img/bg_pattern02.png);}
+/* .portfolio_03 {background:url(../img/bg_pattern02.png);}
 .portfolio_03 .mockup {margin-top:-7.5rem;transform:translateY(50rem) scale(1.2);}
 .portfolio_03.on .mockup {transform:translate(4rem, 0) scale(1.2);transition:0.8s;}
 .portfolio_03 .description {margin:2rem 0 0 8rem;}
@@ -183,7 +187,7 @@ body {font-size:0.8rem;color:#333;}
 @keyframes circle_move {
     0% {top:30%;right:80%;opacity:1;}
     100% {top:-50%;right:150%;opacity:0;}
-}
+} */
 
 
 /*pf04*/
@@ -200,7 +204,7 @@ body {font-size:0.8rem;color:#333;}
 .portfolio_04 .description ul a:hover {border:1px solid #1258a7;color:#1258a7;box-shadow: 3px 3px 5px rgb(0 0 0 / 30%);}
 
 .portfolio_04 .circle_sec {position:absolute;bottom:-50rem;left:4.5%;z-index:1;}
-.portfolio_04 .circle_sec span {display:block;width:36rem;height:36rem;border-radius:50%;border:1.5px solid #bfc9d4;opacity:0.6;}
+.portfolio_04 .circle_sec span {display:block;width:36rem;height:36rem;border-radius:50%;border:1.5px solid #ccc;opacity:0.6;}
 .portfolio_04.on .circle_sec {bottom:37px;transform:rotate(1440deg);transition:1.5s;}
 
 
@@ -218,9 +222,9 @@ body {font-size:0.8rem;color:#333;}
 .app_design.on .description ul li:nth-of-type(2) a {background:#3574ba;border:none;color:#f2f2f2;box-shadow: 3px 3px 5px rgb(0 0 0 / 30%);}
 .app_design .description ul a:hover {border:1px solid #3574ba;color:#3574ba;box-shadow: 3px 3px 5px rgb(0 0 0 / 30%);}
 
-.app_design .circle_sec {position:absolute;bottom:42px;right:-100%;z-index:1;}
-.app_design .circle_sec span {display:block;width:42rem;height:42rem;border-radius:50%;border:1.5px solid #cfc2dd;opacity:0.6;}
-.app_design.on .circle_sec {right:-1.5%;rotate:(1440deg);transition:1.5s;}
+.app_design .circle_sec {position:absolute;top:-100%;right:-3%;z-index:1;}
+.app_design .circle_sec span {display:block;width:42rem;height:42rem;border-radius:50%;border:1.5px solid #ccc;opacity:0.6;}
+.app_design.on .circle_sec {top:-31.5%;rotate:(1440deg);transition:1.5s;}
 
 
 /*training*/
@@ -428,7 +432,7 @@ body {font-size:0.8rem;color:#333;}
     .portfolio_01 .description ul a {border:1px solid #6f42c1;color:#6e278f;border-radius:12px;box-shadow: 3px 3px 5px rgb(0 0 0 / 30%);}
 
     .portfolio_01 .circle_sec {position:absolute;bottom:-5%;right:-100%;z-index:1;}
-    .portfolio_01 .circle_sec span {display:block;width:30rem;height:30rem;border-radius:50%;border:1.5px solid #cfc2dd;opacity:0.6;}
+    .portfolio_01 .circle_sec span {display:block;width:30rem;height:30rem;border-radius:50%;border:1.5px solid #cfcfcf;opacity:0.6;}
 
 
     /*pf02*/
@@ -438,14 +442,14 @@ body {font-size:0.8rem;color:#333;}
     .portfolio_02.on .description ul li:nth-of-type(2) a {background:#4e813b;border:none;color:#f2f2f2;border-radius:12px;box-shadow: 3px 3px 5px rgb(0 0 0 / 30%);}
     .portfolio_02 .description ul a {border:1px solid #4e813b;color:#4e813b;border-radius:12px;box-shadow: 3px 3px 5px rgb(0 0 0 / 30%);}
 
-    .portfolio_02 .circle_sec span {display:block;width:30rem;height:30rem;border-radius:50%;border:1.5px solid #dcdcdc;opacity:0.7;}
+    .portfolio_02 .circle_sec span {display:block;width:30rem;height:30rem;border-radius:50%;border:1.5px solid #cfcfcf;opacity:0.7;}
 
     .portfolio_02 .mockup {transform:translatex(50rem) scale(0.8);margin-top:-40px;}
     .portfolio_02.on .mockup {transform:translateX(0) scale(0.8);transition:0.8s;}
 
 
     /*pf03*/
-    .portfolio_03 .mockup {margin-top:0;transform:translateY(50rem) scale(0.9);}
+    /* .portfolio_03 .mockup {margin-top:0;transform:translateY(50rem) scale(0.9);}
     .portfolio_03.on .mockup {transform:translateY(0) scale(0.9);transition:0.8s;}
     .portfolio_03 .description {margin:-20px auto 0;}
     .portfolio_03 .description h3 {color:#B88D7E;margin-bottom:3vh;}
@@ -458,7 +462,7 @@ body {font-size:0.8rem;color:#333;}
     @keyframes circle_move {
         0% {top:22%;right:80%;opacity:1;}
         100% {top:0;right:120%;opacity:0;}
-    }
+    } */
 
 
     /*pf04*/
@@ -469,8 +473,8 @@ body {font-size:0.8rem;color:#333;}
     .portfolio_04.on .description ul li:nth-of-type(2) a {background:#1258a7;border:none;color:#f2f2f2;border-radius:12px;box-shadow: 3px 3px 5px rgb(0 0 0 / 30%);}
     .portfolio_04 .description ul a {border:1px solid #1258a7;color:#1258a7;border-radius:12px;box-shadow: 3px 3px 5px rgb(0 0 0 / 30%);}
 
-    .portfolio_04 .circle_sec span {display:block;width:26rem;height:26rem;border-radius:50%;border:1.5px solid #bfc9d4;opacity:0.6;}
-    .portfolio_04.on .circle_sec {bottom:45px;transform:rotate(1440deg);transition:1.5s;}
+    .portfolio_04 .circle_sec span {display:block;width:26rem;height:26rem;border-radius:50%;border:1.5px solid #ccc;opacity:0.6;}
+    .portfolio_04.on .circle_sec {bottom:-12%;transform:rotate(1440deg);transition:1.5s;}
 
 
     /* app_design */

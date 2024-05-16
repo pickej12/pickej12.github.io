@@ -5,7 +5,7 @@ $(function(){
     let sideBar=$('nav li');
     $('#main').fullpage({
         
-        anchors:['intro', 'portfolio_01', 'portfolio_02', 'portfolio_03', 'portfolio_04', 'design_work', 'training', 'profile'],
+        anchors:['intro', 'portfolio_01', 'portfolio_02', 'portfolio_03', 'design_work', 'training', 'profile'],
         afterLoad:function(origin, destination, direction){
             let idx=destination.index;
             sc.eq(idx).addClass('on').siblings().removeClass('on');
