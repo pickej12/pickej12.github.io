@@ -133,7 +133,7 @@ body {font-size:0.8rem;color:#333;}
 .portfolio_01 .description ul a:hover {border:1px solid #6f42c1;color:#6e278f;;box-shadow: 3px 3px 5px rgb(0 0 0 / 30%);}
 
 .portfolio_01 .circle_sec {position:absolute;bottom:42px;right:-100%;z-index:1;}
-.portfolio_01 .circle_sec span {display:block;width:42rem;height:42rem;border-radius:50%;border:1.5px solid #cfcfcf;opacity:0.6;}
+.portfolio_01 .circle_sec span {display:block;width:42rem;height:42rem;border-radius:50%;border:1.5px solid #e0e0e0;opacity:0.6;}
 .portfolio_01.on .circle_sec {right:-1.5%;rotate:(1440deg);transition:1.5s;}
 
 
@@ -152,7 +152,7 @@ body {font-size:0.8rem;color:#333;}
 .portfolio_02 .description ul a:hover {border:1px solid #4e813b;color:#4e813b;box-shadow: 3px 3px 5px rgb(0 0 0 / 30%);}
 
 .portfolio_02 .circle_sec {position:absolute;bottom:28px;left:-50rem;z-index:1;}
-.portfolio_02 .circle_sec span {display:block;width:42rem;height:42rem;border-radius:50%;border:1.5px solid #cfcfcf;opacity:0.7;}
+.portfolio_02 .circle_sec span {display:block;width:42rem;height:42rem;border-radius:50%;border:1.5px solid #e0e0e0;opacity:0.7;}
 .portfolio_02.on .circle_sec {left:-1.5%;transform:rotate(1440deg);transition:2s;}
 
 .portfolio_02 .mockup {transform:translate(0, -2rem) scale(1.25);margin-top:-30px;opacity: 0;}
@@ -432,7 +432,7 @@ body {font-size:0.8rem;color:#333;}
     .portfolio_01 .description ul a {border:1px solid #6f42c1;color:#6e278f;border-radius:12px;box-shadow: 3px 3px 5px rgb(0 0 0 / 30%);}
 
     .portfolio_01 .circle_sec {position:absolute;bottom:-5%;right:-100%;z-index:1;}
-    .portfolio_01 .circle_sec span {display:block;width:30rem;height:30rem;border-radius:50%;border:1.5px solid #cfcfcf;opacity:0.6;}
+    .portfolio_01 .circle_sec span {display:block;width:30rem;height:30rem;border-radius:50%;border:1.5px solid #e0e0e0;opacity:0.6;}
 
 
     /*pf02*/
@@ -442,7 +442,7 @@ body {font-size:0.8rem;color:#333;}
     .portfolio_02.on .description ul li:nth-of-type(2) a {background:#4e813b;border:none;color:#f2f2f2;border-radius:12px;box-shadow: 3px 3px 5px rgb(0 0 0 / 30%);}
     .portfolio_02 .description ul a {border:1px solid #4e813b;color:#4e813b;border-radius:12px;box-shadow: 3px 3px 5px rgb(0 0 0 / 30%);}
 
-    .portfolio_02 .circle_sec span {display:block;width:30rem;height:30rem;border-radius:50%;border:1.5px solid #cfcfcf;opacity:0.7;}
+    .portfolio_02 .circle_sec span {display:block;width:30rem;height:30rem;border-radius:50%;border:1.5px solid #e0e0e0;opacity:0.7;}
 
     .portfolio_02 .mockup {transform:translatex(50rem) scale(0.8);margin-top:-40px;}
     .portfolio_02.on .mockup {transform:translateX(0) scale(0.8);transition:0.8s;}
