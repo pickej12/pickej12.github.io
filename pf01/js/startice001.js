@@ -45,7 +45,7 @@ $(function(){
             let secTop = $(this).offset().top;
             sct > secTop - 400 ? $(this).addClass('on') : $(this).removeClass('on'); 
         });
-        $('#right_pop').css({top:120+sct});
+        // $('#right_pop').css({top:200+sct});
     });
 
 
