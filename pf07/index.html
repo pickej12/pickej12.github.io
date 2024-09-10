@@ -337,7 +337,7 @@
                     <p>삼육대학교</p>
                     <div class="main_slider">
                         <!-- 모바일 화면 페이지 전환 유도 위해 링크 정해지면 이미지 슬라이드에 onclick으로 링크 달기 -->
-                        <figure class="on">
+                        <figure class="on" aria-haspopup="true">
                             <img src="./img/main_slider.jpg" alt="장학금1위">
                             <a href="#!" class="txt">
                                 <h3>재학생 장학금 <em>01위</em></h3>
@@ -348,7 +348,7 @@
                                 <strong>자세히 보기 <i class="xi-angle-right"></i></strong>
                             </a>
                         </figure>
-                        <figure>
+                        <figure aria-haspopup="true">
                             <img src="./img/main_slider02.jpg" alt="자매결연">
                             <a href="#!" class="txt">
                                 <h3>자매결연대학 <em>98</em></h3>
@@ -356,7 +356,7 @@
                                 <strong>자세히 보기 <i class="xi-angle-right"></i></strong>
                             </a>
                         </figure>
-                        <figure>
+                        <figure aria-haspopup="true">
                             <img src="./img/main_slider033.jpg" alt="SDA대학">
                             <a href="#!" class="txt">
                                 <h3>해외 SDA기관 대학 <em>96</em></h3>
@@ -659,8 +659,9 @@
                                     </ul>
                                 </div>
                                 <div class="popUp">
+                                    <!-- aria- 접근성 추가하기 -->
                                     <figure>
-                                        <a href="#!"><img src="./img/con02_popup01.jpg" alt="popup01"></a>
+                                        <a href="#!"><img src="./img/con02_popup01.jpg" alt="popup01" ></a>
                                         <a href="#!"><img src="./img/con02-popup02.jpg" alt="popup02"></a>
                                     </figure>
                                 </div>
