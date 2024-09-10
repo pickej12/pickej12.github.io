@@ -116,7 +116,7 @@
         </div>
     </section>
 
-    <div class="popup">
+    <div class="popup" aria-haspopup="true">
         <div class="position">
             <div class="close_btn">
                 <label><input type="checkbox" class="today_chk">오늘 하루 보지 않기</label>
@@ -386,6 +386,11 @@
         <i class="xi-arrow-up"></i>
     </div>
 </div>
-    
+
+<!-- 모달.팝업 접근성 고려 -->
+<!-- aria-haspopup : 해당요소가 하위 팝업이나 메뉴를 보유 중인 것을 알림 -->
+<!-- aria-expanded : 특정요소가 접혀있는지(false) 펼쳐있는지(true) 표시(아코디언 접근성!) -->
+<!-- aria-modal : 모달창임을 알림_닫기 전까지 인지하도록 -->
+<!-- 순서 tabindex_키보드 접근성 -->
 </body>
 </html>
