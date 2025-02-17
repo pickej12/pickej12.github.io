@@ -94,7 +94,7 @@ $(function(){
 
 
     $('#video01').YTPlayer({
-        videoURL:'https://youtu.be/xjxBR0uwtWc?playsinline=1',
+        videoURL:'https://youtu.be/xjxBR0uwtWc',
         containment:'self',
         autoPlay:true,
         mute:true,
