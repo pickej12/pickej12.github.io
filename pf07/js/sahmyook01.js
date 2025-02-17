@@ -98,7 +98,7 @@ $('.con03Content .con03_03 .btn i.xi-angle-right').on('click',function(){
 
 
 $('#mv01').YTPlayer({
-    videoURL:'https://youtu.be/DaVkE5l70BQ',
+    videoURL:'https://youtu.be/DaVkE5l70BQ?playsinline=1',
     containment:'self',
     autoPlay:true,
     mute:true,
