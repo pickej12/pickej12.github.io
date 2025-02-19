@@ -10,7 +10,7 @@ $(function(){
         mute:true,
         startAt:0,
         opacity:1,
-        showControls:false, //동영상 플레이표시(?) 지우기
+        showControls:true, //동영상 플레이표시(?) 지우기
     });
 
     $('#visual i.xi-pause').on('click', function(){
