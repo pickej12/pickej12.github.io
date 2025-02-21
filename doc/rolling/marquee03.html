@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <meta name="description" content="사람이 만든 가치가 가장 중요함을 알고 있는 회사, 꾸준함이 성장으로 이어지는 회사, 저희는 애드캡슐입니다.">
+    <meta name="keywords" content="애드캡슐소프트,adcapsulesoft,애드캡슐,adcapsule,웹에이전시,기획,디자인,퍼블리싱,UX,UI,프로그래밍,소프트웨어,SI,ICT,ITO">
+    <meta name="title" content="ADCAPSULE">
+    <meta name="robots" content="index,follow">
+
+    <title>ADCAPSULE</title>
+
+    <link rel="icon" href="https://www.adcapsule.kr/static/images/icon.png" type="image/png">
+    <link rel="stylesheet" href="https://www.adcapsule.kr/static/css/reset.css">
+    <link rel="stylesheet" href="./static/css/font.css">
+    <link rel="stylesheet" href="https://www.adcapsule.kr/static/css/common.css">
+    <link rel="stylesheet" href="https://www.adcapsule.kr/static/css/main.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/xpressengine/xeicon@latest/xeicon.min.css">
+
+    <script src="https://www.adcapsule.kr/static/js/libs/jquery.min.js"></script>
+    <script src="https://www.adcapsule.kr/static/js/common.js"></script>
+    
+    <style lang="css">
+        #container {
+            width:100%;
+            padding:100px 0;
+            position:relative;
+            overflow:hidden;
+        }
+
+        .bg_txt {
+            position:absolute;
+            z-index:-1;
+            font-size:270px;
+            line-height:1;
+            opacity:0.75;
+        }
+        .bg_txt._t{
+            top:0; left:0;
+        }
+        .bg_txt._b {
+            bottom:0; right:0;
+        }
+
+        .marquee_area {
+            position:relative;
+            margin:0 auto;
+            overflow:hidden;
+
+            display:flex;
+            /* gap:100px; */
+        }
+
+        .ad_history {
+            display:flex;
+            /* gap:100px; */
+
+            overflow:hidden;
+        }
+
+        .ad_history li[class ^="h_"] {
+            width:420px; height:fit-content;
+            background:rgba(255,255,255,0.3);
+            backdrop-filter:blur(5px);
+            border:1px solid #000;
+            padding:20px;
+            margin:0 50px; /*gap 사용 대신 margin(width 추출 쉽게하기 위해)*/
+            text-align:center;
+        }
+        .ad_history.clone li[class ^="h_"] {
+            
+            background:rgba(0,0,0,0.1);
+           
+        }
+        .ad_history li:nth-child(odd){
+            margin-bottom:100px;
+        }
+        .ad_history li:nth-child(even){
+            margin-top:100px;
+        }
+
+        .ad_history h3 {
+            font-weight:bold;
+            position:relative;
+            padding-bottom:20px;
+            border-bottom:1px solid #000;
+        }
+        .ad_history h3::before, h3::after{
+            content:"";
+            display:block;
+            width:10px; height:10px;
+            background:#000;
+            border-radius:50%;
+
+            position:absolute;
+            top:10px; left:0;
+            transform:translateY(-50%);
+        }
+        .ad_history h3::after{
+            left:calc(100% - 10px);
+        }
+
+        .ad_history strong {
+            font-size:180px;
+
+            position:relative;
+            display:block;
+            margin:30px 0 17px;
+        }
+        .ad_history strong .etc_ic {
+            position:absolute;
+            top:5%; right:5%;
+            font-weight:700;
+            font-size:40px;
+        }
+        .ad_history strong .etc_num{
+            font-size:100px;
+        }
+
+        .ad_history span {
+            display:block;
+            font-weight:bold;
+            font-size:32px;
+            margin-bottom:30px;
+        }
+
+        .ad_history p {
+            font-weight:light;
+            font-size:14px;
+            color:#666;
+            padding:20px 0 20px;
+            border-top:1px solid #000;
+            word-break: keep-all;
+        }
+
+        /* @keyframe */
+        .ad_history.ori {
+            animation: rollingF 15s linear infinite;
+        }
+        .ad_history.clone {
+            animation: rollingL 15s linear infinite;
+        }
+        /* 원본과 복제 배너 시작 위치가 달라서 애니메이션 2개! */
+        @keyframes rollingF{
+            0% { transform: translateX(0);}
+	        50% { transform: translateX(-100%); }
+	        50.01% { transform: translateX(100%);}
+	        100% { transform: translateX(0);}
+        }
+
+        @keyframes rollingL {
+            0% { transition: translateX(0); }
+	        100% { transform: translateX(-200%); }
+        }
+        /* //==@keyframe */
+
+        .toggle_play{
+            position:relative;
+        }
+
+        .toggle_play i{
+            position:absolute;
+            top:0;left:50%;
+            transform:translateX(-50%);
+
+            display:block;
+            width:36px; height:36px;
+            border-radius:7px;
+            line-height:36px;
+            font-size:20px;
+            text-align:center;
+            border:1px solid #999;
+            background:#333;
+            color:#FFF;
+            cursor:pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="container" class="hlv">
+        <div class="bg_txt _t serif">ABOUT</div>
+        <div class="bg_txt _b serif">US</div>
+        <div class="marquee_area">
+            <ul class="ad_history">
+                <li class="h_01">
+                    <h3>ESTABLISHMENT</h3>
+                    <strong class="serif">26</strong>
+                    <span>YEARS</span>
+                    <p class="pre">Date of Establishment</p>
+                </li>
+                <li class="h_02">
+                    <h3>OUR PARTNER</h3>
+                    <strong class="serif">271</strong>
+                    <span>PARTNERS</span>
+                    <p class="pre">애드캡슐은 271개의 기업과 함께했습니다.</p>
+                </li>
+                <li class="h_03">
+                    <h3>OUR MEMBERS</h3>
+                    <strong class="serif">220</strong>
+                    <span>PEOPLE</span>
+                    <p class="pre">애드캡슐에 재직중인 직원 수는 220명입니다.</p>
+                </li>
+                <li class="h_04">
+                    <h3>YEARS OF EMPLOYMENT</h3>
+                    <strong class="serif">07</strong>
+                    <span>YEARS</span>
+                    <p class="pre">애드캡슐의 평균 근속년수는 7년입니다.</p>
+                </li>
+                <li class="h_05">
+                    <h3>PROJECTS PERIOD</h3>
+                    <strong class="serif">442<em class="etc_ic suit">+</em></strong>
+                    <span>PROJECTS</span>
+                    <p class="pre">애드캡슐은 자체 개발 방법론으로 442개 이상의 프로젝트를 수행하였습니다.</p>
+                </li>
+                <li class="h_06">
+                    <h3>PARTNER PERIOD</h3>
+                    <strong class="serif">12<em class="etc_num">.6</em></strong>
+                    <span>PARTNERS</span>
+                    <p class="pre">애드캡슐은 기업들과 평균 12.6년간 함께하고 있습니다.</p>
+                </li>
+            </ul>
+        </div>
+        <div class="marquee_btn">
+            <div class="toggle_play">
+                <i class="xi-play"></i>
+                <i class="xi-pause"></i>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        let marqueeArea = document.querySelector('.ad_history');
+        marqueeArea.id = 'roller01';
+
+        let cloneMarquee = marqueeArea.cloneNode(true);
+        cloneMarquee.id = 'roller02';
+        document.querySelector('.marquee_area').appendChild(cloneMarquee); //어디 하위에 복제할지 지정해줘야 html에 복사되어 나타남!
+        
+        marqueeArea.classList.add('ori');
+        cloneMarquee.classList.add('clone');
+
+        $(document).ready(function(){
+            $('.xi-pause').click(function(){
+                $('.ad_history').css('animation-play-state','paused');
+                $(this).css('display', 'none');
+
+                console.log('play click')
+            });
+
+            $('.xi-play').click(function(){
+                $('.xi-pause').css('display', 'block');
+                $('.ad_history').css('animation-play-state','running')
+                console.log('pause click')
+            });
+        });
+
+        // animation-play-state:paused => 키프레임, 애니메이션 일시 정지!
+    </script>
+</body>
