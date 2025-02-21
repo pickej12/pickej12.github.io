@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>v-test_area</title>
+
+    <script src="./asset/jquery-1.12.4.min.js"></script> <!--ytp전에 불러와야 오류가 안 뜸.-->
+    <script src="./asset/jquery-ui.js"></script>
+
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/xpressengine/xeicon@latest/xeicon.min.css">
+
+    <link rel="stylesheet" href="./asset/jquery.mb.YTPlayer.min.css">
+    <script src="./asset/jquery.mb.YTPlayer.min.js"></script>
+
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script> -->
+    <style lang="css">
+        .container {
+            width:600px;
+            padding:0 20px;
+            margin:0 auto;
+        }
+
+        .container > div {
+            margin: 200px 0;
+            width:100%; height:auto;
+            aspect-ratio:1/1;
+        }
+
+        .tit {font-size:17px; color:#999; margin-bottom:32px; font-weight:bold;}
+    </style>
+</head>
+<body>
+    <!-- 번외: 썸네일 추출 -->
+        <!-- url에서 '?v=' 뒤에 나오는 코드 추출 videoId로 사용됨 -->
+        <!-- <c:set var="urlCode" value="${fn:split(result.urlAddr, '?v=')[1]}" /> -->
+
+        <!-- urlCode를 활용하여 영상 썸네일 추출 -->
+        <!-- <img src="https://img.youtube.com/vi/${urlCode}/sddefault.jpg" /> -->
+    <!-- //추출 -->
+    <div class="container">
+        <!-- 02.19 동작확인! >  화면 확인X -->
+        <!-- 01 : 버튼 클릭시 이미지가 있던 태그를 비우고 영상으로 채워넣기 -->
+
+        <style lang="css">
+            .video_box {
+                position:relative;
+                width:100%;height:auto;
+                aspect-ratio:1/1;
+            }
+            #ytp_v{
+                height:100%;
+            }
+            .yt_play_btn {
+                position:absolute;
+                top:50%; left:50%;
+                cursor: pointer;
+                font-size:50px;
+                color:#FFF;
+                transform:translate(-50%);
+            }
+        </style>
+
+        <div class="V01">
+            <p class="tit">01</p>
+
+            <div class="video_box">
+                <!-- 썸네일 이미지 (사용자가 클릭하여 동영상을 재생) -->
+                <div id="ytp_v" style="background:url('./images/ko/cctv/02.png') no-repeat center/cover;">
+                    <i class="xi-play-circle-o yt_play_btn" onclick="loadVideo()"></i>
+                </div>
+            </div>
+            
+            <script>
+                // YouTube Iframe API 로드
+                function onYouTubeIframeAPIReady() { }
+            
+                // YouTube Iframe API 스크립트 로드
+                var tag = document.createElement('script');
+                tag.src = "https://www.youtube.com/iframe_api";
+                
+                var firstScriptTag = document.getElementsByTagName('script')[0];
+                firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+                
+                var player;
+            
+                // 동영상 로드 함수 (사용자가 클릭하면 실행)
+                function loadVideo() {
+                    // 썸네일을 숨기고, YouTube Iframe API를 통해 동영상 삽입
+                    var container = document.getElementById('ytp_v');
+                    container.innerHTML = ''; // 썸네일 이미지 제거
+                    player = new YT.Player('ytp_v', {
+                        height: 'fit-content',
+                        width: '100%',
+                        // https://www.youtube.com/embed/-NMGfMB01mU
+                        videoId: '-NMGfMB01mU',  // YouTube 비디오 ID
+                        playerVars: {
+                            'autoplay': 1,  // 자동 재생
+                            'controls': 1,  // 기본 컨트롤러 표시
+                            'modestbranding': 1, // YouTube 로고 숨기기
+                            'rel': 0,        // 추천 비디오 표시 안 함
+                            'showinfo': 1,   // 비디오 정보 표시
+                            'fs': 1,         // 전체 화면 버튼 표시
+                            'iv_load_policy': 1, // 주석 표시
+                            'cc_load_policy': 1,  // 자막 표시
+                            'mute' : 1, //접근성 준수..
+                            // ** 페이지 접속 시 바로 재생이 아닌, 재생 버튼 클릭시 자동재생이므로 mute옵션 없어도 됨!_내부에 선택 할 수 있는 컨트롤러 있으니
+                        },
+                    });
+                };
+            </script>
+        </div>
+
+
+        <!-- 02 : 버튼 클릭시 이미지 없애고 밑에 숨어있던 영상 자동 재생 -->
+        <!--  재생버튼 자동 붙음//확인.. -->
+
+        <style lang="css">
+            .r_wrap {
+                position:relative;
+                width:100%; height:auto;
+            }
+            
+            #ytp {height:200px;}
+            
+            .youtube_p_btn {
+                position: absolute;
+                top:50%; left:50%; transform:translate(-50%);
+                z-index:5;
+                cursor:pointer;
+                color:#FFF;
+                font-size:51px;
+                text-shadow:2px 2px 12px rgba(0,0,0,1);
+            }
+
+            .youtube_p_thumbnail {
+                position:absolute;
+                top:0; left:0;
+                width:100%; height:100%;
+                background:url('./images/ko/cctv/04.jpg') no-repeat center/cover;
+            }
+        </style>
+
+        <div class="V02">
+            <p class="tit">02</p>
+
+            <div class="r_wrap">
+                <div id="ytp"></div>
+                <div class="youtube_p_thumbnail"></div>
+                <i class="youtube_p_btn xi-play"></i>
+            </div>
+            <script>
+                $(function(){
+                    $('.youtube_p_btn').on('click', function(){
+                        $(this).css('display', 'none');
+                        $('.youtube_p_thumbnail').css('display', 'none');
+                        console.log('여기 동작중')
+            
+                        $('#ytp').YTPPlay();
+                    })
+                    // // https://www.youtube.com/embed/6okMf9JlgIc
+                    // $('#ytp').YTPlayer({
+                    //     videoURL:'https://www.youtube.com/embed/6okMf9JlgIc',
+                    //     containment: '#ytp', //동영상 재생 될 위치 지정
+                    //     autoPlay:true, mute:true, // 버튼 클릭시 영상 재생이라 mute 설정 상관없으
+                    //     startAt: 0,
+                    //     opacity: 1,
+                    //     showControls:true, //동영상 플레이표시(?) 지우기
+                    // });
+
+                    $('#ytp').YTPlayer({
+                        videoURL:'http://youtu.be/BsekcY04xvQ',
+                        containment:'#ytp', //동영상 재생 될 위치 지정
+                        autoPlay:true,
+                        mute:true,
+                        startAt:0,
+                        opacity:1,
+                        showControls:true, //동영상 플레이표시(?) 지우기
+                    });
+                })
+            </script>
+        </div>
+
+
+        <!-- 03 : 01과 동일방법/ 코드작성법이 다름 -->
+
+        <style lang="css">
+            #ytp_videoo {
+                background:url('./images/ko/cctv/ico_service_02.png') center/cover; 
+                width:100%; height:470px;
+                border:1px solid #CCC; 
+                position: relative;
+            }
+
+            .ytp_play_btn{
+                cursor: pointer;
+                text-shadow:2px 2px 20px rgba(0,0,0,0.2);
+                color:#FFF;
+                font-size:50px;
+            }
+        </style>
+
+        <div class="V03">
+            <p class="tit">03</p>
+
+            <!--  썸네일 이미지 (사용자가 클릭하여 동영상을 재생) -->
+            <div id="ytp_videoo">
+                <div class="play-overlay" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                    <i class="xi-youtube-play ytp_play_btn" onclick="startVideo()"></i>
+                </div>
+            </div>
+
+            <script>
+                function startVideo() {
+                    var container = document.getElementById('ytp_videoo');
+                    
+                    // 썸네일을 숨기고 iframe으로 동영상 삽입
+                    container.innerHTML = 
+                    '<iframe id="ytp_iframe" width="100%" height="100%" src="https://www.youtube.com/embed/8lh9DvMnpOI?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+                }
+            </script>
+        </div>
+    </div>
+</body>
+</html>
