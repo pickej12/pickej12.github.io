@@ -1,0 +1,89 @@
+/* Helvetica */
+@font-face{
+  font-family: Helvetica;
+  font-weight: 300;
+  src: url('../font/Helvetica-Light.woff2') format('woff2'), url('../font/Helvetica-Light.woff') format('woff'), url('../font/Helvetica-Light.ttf') format('ttf');
+}
+@font-face{
+  font-family: Helvetica;
+  font-weight: 400;
+  src: url('../font/Helvetica.woff2') format('woff2'), url('../font/Helvetica.woff') format('woff'), url('../font/Helvetica.ttf') format('ttf');
+}
+@font-face{
+  font-family: Helvetica;
+  font-weight: 700;
+  src: url('../font/Helvetica-Bold.woff2') format('woff2'), url('../font/Helvetica-Bold.woff') format('woff'), url('../font/Helvetica-Bold.ttf') format('ttf');
+}
+.hlv {font-family: Helvetica;}
+.hlvb {font-family: Helvetica; font-weight: 700 !important;}
+
+/* Noto Serif */
+@font-face{
+  font-family: 'Noto Serif Display';
+  font-weight: 400;
+  src: local('Noto Serif Display'), url('../font/NotoSerifDisplay-Regular.woff') format('woff'), url('../font/NotoSerifDisplay-Regular.ttf') format('ttf');
+}
+@font-face{
+  font-family: 'Noto Serif Display';
+  font-weight: 500;
+  src: local('Noto Serif Display'), url('../font/NotoSerifDisplay-Medium.woff') format('woff'), url('../font/NotoSerifDisplay-Medium.ttf') format('ttf');
+}
+@font-face{
+  font-family: 'Noto Serif Display';
+  font-weight: 700;
+  src: local('Noto Serif Display'), url('../font/NotoSerifDisplay-Bold.woff') format('woff'), url('../font/NotoSerifDisplay-Bold.ttf') format('ttf');
+}
+.serif {font-family: 'Noto Serif Display'; font-weight: 500;}
+
+/* Pretendard */
+@font-face{
+  font-family: 'Pretendard';
+  font-weight: 400;
+  src: url('../font/Pretendard-Regular.woff2') format('woff2'), url('../font/Pretendard-Regular.woff') format('woff');
+}
+@font-face{
+  font-family: 'Pretendard';
+  font-weight: 300;
+  src: url('../font/Pretendard-Light.woff2') format('woff2'), url('../font/Pretendard-Light.woff') format('woff');
+}
+@font-face{
+  font-family: 'Pretendard';
+  font-weight: 500;
+  src: url('../font/Pretendard-Medium.woff2') format('woff2'), url('../font/Pretendard-Medium.woff') format('woff');
+}
+@font-face{
+  font-family: 'Pretendard';
+  font-weight: 600;
+  src: url('../font/Pretendard-SemiBold.woff2') format('woff2'), url('../font/Pretendard-SemiBold.woff') format('woff');
+}
+@font-face{
+  font-family: 'Pretendard';
+  font-weight: 700;
+  src: url('../font/Pretendard-Bold.woff2') format('woff2'), url('../font/Pretendard-Bold.woff') format('woff');
+}
+@font-face{
+  font-family:'Pretendard Variable';
+  font-weight:45 920;
+  font-style:normal;
+  font-display:swap;
+  src:url('../font/PretendardVariable.woff2') format('woff2-variations')
+}
+.pre {font-family: 'Pretendard';}
+
+/* SUIT */
+@font-face {
+	font-family: 'SUIT';
+	font-weight: 400;
+  src: local('SUIT'), url('../font/SUIT-Regular.woff2') format('woff2'), url('../font/SUIT-Regular.ttf') format('ttf');
+}
+@font-face {
+	font-family: 'SUIT';
+	font-weight: 500;
+  src: local('SUIT'), url('../font/SUIT-Medium.woff2') format('woff2'), url('../font/SUIT-Medium.ttf') format('ttf')
+}
+@font-face {
+	font-family: 'SUIT';
+	font-weight: 700;
+  src: local('SUIT'), url('../font/SUIT-Bold.woff2') format('woff2'), url('../font/SUIT-Bold.ttf') format('ttf');
+}
+.suit {font-family: 'SUIT';}

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <meta name="description" content="사람이 만든 가치가 가장 중요함을 알고 있는 회사, 꾸준함이 성장으로 이어지는 회사, 저희는 애드캡슐입니다.">
+    <meta name="keywords" content="애드캡슐소프트,adcapsulesoft,애드캡슐,adcapsule,웹에이전시,기획,디자인,퍼블리싱,UX,UI,프로그래밍,소프트웨어,SI,ICT,ITO">
+    <meta name="title" content="ADCAPSULE">
+    <meta name="robots" content="index,follow">
+
+    <title>ADCAPSULE</title>
+
+    <link rel="icon" href="https://www.adcapsule.kr/static/images/icon.png" type="image/png">
+    <link rel="stylesheet" href="https://www.adcapsule.kr/static/css/reset.css">
+    <link rel="stylesheet" href="./static/css/font.css">
+    <link rel="stylesheet" href="https://www.adcapsule.kr/static/css/common.css">
+    <link rel="stylesheet" href="https://www.adcapsule.kr/static/css/main.css">
+    <link rel="stylesheet" href="https://www.adcapsule.kr/static/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/xpressengine/xeicon@latest/xeicon.min.css">
+
+    <script src="https://www.adcapsule.kr/static/js/libs/jquery.min.js"></script>
+    <script src="https://www.adcapsule.kr/static/js/libs/gsap.min.js"></script>
+    <script src="https://www.adcapsule.kr/static/js/libs/ScrollTrigger.js"></script>
+    <script src="https://www.adcapsule.kr/static/js/libs/smooth-scrollbar.js"></script>
+    <script src="https://www.adcapsule.kr/static/js/libs/swiper-bundle.min.js"></script>
+
+    <script src="https://www.adcapsule.kr/static/js/common.js"></script>
+
+    <!-- marquee-area -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery.marquee@1.6.1/jquery.marquee.min.js"></script>
+    
+    <style lang="css">
+        #container {
+            width:100%;
+            padding:100px 0;
+            position:relative;
+            overflow:hidden;
+        }
+
+        .bg_txt {
+            position:absolute;
+            z-index:-1;
+            font-size:270px;
+            line-height:1;
+            opacity:0.75;
+        }
+        .bg_txt._t{
+            top:0; left:0;
+        }
+        .bg_txt._b {
+            bottom:0; right:0;
+        }
+
+        .ad_history {
+            display:flex;
+            gap:100px;
+
+            overflow:hidden;
+        }
+
+        .ad_history li[class ^="h_"] {
+            width:420px; height:fit-content;
+            background:rgba(255,255,255,0.3);
+            backdrop-filter:blur(5px);
+            border:1px solid #000;
+            padding:20px;
+            text-align:center;
+        }
+        .ad_history li:nth-child(odd){
+            margin-bottom:100px;
+        }
+        .ad_history li:nth-child(even){
+            margin-top:100px;
+        }
+
+        .ad_history h3 {
+            font-weight:bold;
+            position:relative;
+            padding-bottom:20px;
+            border-bottom:1px solid #000;
+        }
+        .ad_history h3::before, h3::after{
+            content:"";
+            display:block;
+            width:10px; height:10px;
+            background:#000;
+            border-radius:50%;
+
+            position:absolute;
+            top:10px; left:0;
+            transform:translateY(-50%);
+        }
+        .ad_history h3::after{
+            left:calc(100% - 10px);
+        }
+
+        .ad_history strong {
+            font-size:180px;
+
+            position:relative;
+            display:block;
+            margin:30px 0 17px;
+        }
+        .ad_history strong .etc_ic {
+            position:absolute;
+            top:5%; right:5%;
+            font-weight:700;
+            font-size:40px;
+        }
+        .ad_history strong .etc_num{
+            font-size:100px;
+        }
+
+        .ad_history span {
+            display:block;
+            font-weight:bold;
+            font-size:32px;
+            margin-bottom:30px;
+        }
+
+        .ad_history p {
+            font-weight:light;
+            font-size:14px;
+            color:#666;
+            padding:20px 0 20px;
+            border-top:1px solid #000;
+            word-break: keep-all;
+        }
+
+        .marquee_btn {
+            display:flex;
+            margin:50px;
+            gap:30px;
+            justify-content: right;
+
+            position:absolute;
+            bottom:-19px; left:0; 
+            /* left:50%; transform: translateX(-50%); */
+        }
+
+        .marquee_btn i {
+            display:block;
+            width:36px; height:36px;
+            border-radius:7px;
+            line-height:36px;
+            font-size:20px;
+            text-align:center;
+            border:1px solid #999;
+            background:#333;
+            color:#FFF;
+            cursor:pointer;
+        }
+
+        .toggle_play{
+            position:relative;
+            width:36px;
+        }
+
+        .toggle_play i{
+            position:absolute;
+            top:0;left:0;
+        }
+
+        /* z-index로 뒤로 미루면 .toggle_play안에 있기 때문에 선택해야될 때 js에서 영역을 못 잡음. */
+        /* .toggle_play .xi-pause {
+            z-index:-1;
+        } */
+    </style>
+    <!-- //marquee -->
+</head>
+<body>
+    <div id="container" class="hlv">
+        <div class="bg_txt _t serif">ABOUT</div>
+        <div class="bg_txt _b serif">US</div>
+        <div class="marquee_area">
+            <ul class="ad_history">
+                <li class="h_01">
+                    <h3>ESTABLISHMENT</h3>
+                    <strong class="serif">26</strong>
+                    <span>YEARS</span>
+                    <p class="pre">Date of Establishment</p>
+                </li>
+                <li class="h_02">
+                    <h3>OUR PARTNER</h3>
+                    <strong class="serif">271</strong>
+                    <span>PARTNERS</span>
+                    <p class="pre">애드캡슐은 271개의 기업과 함께했습니다.</p>
+                </li>
+                <li class="h_03">
+                    <h3>OUR MEMBERS</h3>
+                    <strong class="serif">220</strong>
+                    <span>PEOPLE</span>
+                    <p class="pre">애드캡슐에 재직중인 직원 수는 220명입니다.</p>
+                </li>
+                <li class="h_04">
+                    <h3>YEARS OF EMPLOYMENT</h3>
+                    <strong class="serif">07</strong>
+                    <span>YEARS</span>
+                    <p class="pre">애드캡슐의 평균 근속년수는 7년입니다.</p>
+                </li>
+                <li class="h_05">
+                    <h3>PROJECTS PERIOD</h3>
+                    <strong class="serif">442<em class="etc_ic suit">+</em></strong>
+                    <!-- <strong class="serif">442<i class="etc_ic xi-plus-min"></i></strong> -->
+                    <span>PROJECTS</span>
+                    <p class="pre">애드캡슐은 자체 개발 방법론으로 442개 이상의 프로젝트를 수행하였습니다.</p>
+                </li>
+                <li class="h_06">
+                    <h3>PARTNER PERIOD</h3>
+                    <strong class="serif">12<em class="etc_num">.6</em></strong>
+                    <span>PARTNERS</span>
+                    <p class="pre">애드캡슐은 기업들과 평균 12.6년간 함께하고 있습니다.</p>
+                </li>
+            </ul>
+        </div>
+        <div class="marquee_btn">
+            <i class="xi-pause-circle-o"></i>
+            <i class="xi-play-circle-o" onclick="replay();"></i>
+            <div class="toggle_play" onclick="togglePlay();">
+                <i class="xi-pause"></i>
+                <i class="xi-play"></i>
+            </div>
+            <i class="xi-renew"></i>
+        </div>
+    </div>
+
+    <script>
+        $(function(){
+            //============================================== 
+            $('.marquee_area').marquee({
+                // allowCss3Support:true, // ani지원 [true/false] | false:jquery로만 처리
+                // css3easing:'linear'
+                // easing:'linear',
+
+                // 지속시간 [기본값 5000]
+                duration:25000, 
+                //사이 간격
+                gap:100, 
+                // 시작하기 전 대기 시간
+                delayBeforeStart:500,
+                // 방향 [left/right :가로 | up/down :세로]
+                direction:"left", 
+                // 복제 여부(끊기지 않는 흐름위해) [true/false] 
+                // : true 지정 없을 시 자동 반복은 되지만 잠시 끊기는 현상이 있을 수 O
+                duplicated:true,
+                // -번 복제
+                duplicateCount:1, 
+                // ani 종료 후 다음 반복 전 시간 텀
+                // postAnimationPause:0, 
+                // marquee 속도 [동일 값이어도 텍스트 길이마다 속도 다름]
+                speed:300, 
+                
+                // 마우스 호버시 일시정지 [true/false] -> 정지 메서드 사용 시에도 마우스 호버 후 떼면 다시 슬라이드. 
+                // : 버튼 생성하여 메서드 사용 할 시 hover동작도 jquery로!
+                pauseOnHover:false, 
+                // 한 사이클 돌고 정지할지 여부
+                pauseOnCycle:false,  
+                // false시 첫 화면에 아무것도X. 끝부분에서 시작되어 나옴
+                startVisible:true, 
+            });
+            //============================================== 
+
+            // ** Method **
+            // pause: 일시 중지 | resume: 다시 시작 | toggle: 동작 반대(정지 중-> 재생/ 재생 중 -> 정지) | destroy: 설정한 marquee 애니메이션을 초기화[새 설정할때, 아예 종료할 때 사용]
+            
+            //==pause
+            $('.marquee_btn .xi-pause-circle-o').click(function(){
+                $('.marquee_area').marquee("pause");
+                marqueePaused = true;
+            });
+
+            //==destroy
+            // destroy 사용시 "destroy" 먼저 지정 후 그 다음에 올 사항 선택.
+            $('.marquee_btn .xi-renew').click(function(){
+                $('.marquee_area').marquee("destroy");
+                $('.marquee_area').marquee({
+                    direction:"right",
+                    speed:1000, 
+                    pauseOnHover:false, 
+                    pauseOnCycle:false,  
+                    startVisible:true, 
+                    duplicated:true,
+                    duplicateCount:1, 
+                });
+            })
+            //== replay 같은방법**
+            // $('.marquee_btn .xi-play-circle-o').click(function(){
+            //     $('.marquee_area').marquee("resume");
+            //     marqueePaused = false;
+            // });
+        });
+
+        //== replay 같은방법**
+        function replay(){
+            $('.marquee_area').marquee("resume");
+            marqueePaused = false;
+        };
+
+        //== toggle
+        function togglePlay(){
+            $('.marquee_area').marquee("toggle");
+
+            $('.xi-play').click(function(){
+                $(this).css('display', 'none');
+                console.log('play click')
+            });
+
+            $('.xi-pause').click(function(){
+                $('.xi-play').css('display', 'block');
+                console.log('pause click')
+            });
+        };
+    </script>
+    
+</body>
